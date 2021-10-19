@@ -68,7 +68,7 @@ p{
   }
   .center {
     margin: auto;
-    width: 50%;
+    
     /* border: 3px solid var(--orange); */
     font-family: 'Abel';
     padding: 10px;

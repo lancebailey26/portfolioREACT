@@ -1,12 +1,12 @@
 import './App.css';
-import Homepage from './components/homepage';
+import Intro from './components/intro';
 import Contact from './components/contact';
 
 
 function App() {
   return (
    <>
-      <Homepage />
+      <Intro />
       <Contact/>
     </>
   );

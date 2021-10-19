@@ -1,4 +1,4 @@
-export default function homepage(){
+export default function intro(){
     
     return (
         <div className='center '>
