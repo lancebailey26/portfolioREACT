@@ -7,26 +7,26 @@ const mail= "M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM
 export default function contact() {
     return (
         <div className='footer'>
-            <p> Connect with me:</p>
-            <a href='https://www.github.com/lancebailey26'><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#461E52" class="bi bi-github" viewBox="0 0 16 16">
+           
+            <a href='https://www.github.com/lancebailey26'><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#461E52" class="bi bi-github" viewBox="0 0 16 16">
                 <path d={github} />
             </svg></a>
             
-            <a href='https://www.linkedin.com/in/lance-bailey/'><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#461E52" class="bi bi-github" viewBox="0 0 16 16">
+            <a href='https://www.linkedin.com/in/lance-bailey/'><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#461E52" class="bi bi-github" viewBox="0 0 16 16">
                 <path d={linkedin} />
             </svg></a>
 
-            <a href='https://www.twitter.com/lancebailey26'><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#461E52" class="bi bi-github" viewBox="0 0 16 16">
+            <a href='https://www.twitter.com/lancebailey26'><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#461E52" class="bi bi-github" viewBox="0 0 16 16">
                 <path d={twitter} />
             </svg></a>
 
-            <a href='https://www.instagram.com/lancebailey'><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#461E52" class="bi bi-github" viewBox="0 0 16 16">
+            <a href='https://www.instagram.com/lancebailey'><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#461E52" class="bi bi-github" viewBox="0 0 16 16">
                 <path d={instagram} />
             </svg></a>
-            <a href='mailto:lancebailey222@gmail.com'><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#461E52" class="bi bi-github" viewBox="0 0 16 16">
+            <a href='mailto:lancebailey222@gmail.com'><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#461E52" class="bi bi-github" viewBox="0 0 16 16">
                 <path d={mail} />
             </svg></a>
-            {/* <a href='tel:4192773706'><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#DD517F" class="bi bi-github" viewBox="0 0 16 16">
+            {/* <a href='tel:4192773706'><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#DD517F" class="bi bi-github" viewBox="0 0 16 16">
                 <path d={phone} />
             </svg></a> */}
 
