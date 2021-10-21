@@ -7,9 +7,12 @@
   --pink: #DD517F;
   --orange: #E68E36;
 }
+/*mobile*/
 @media only screen and (max-width: 992px) {
 .footer {
-  margin-top: 1rem;
+  display: block;
+  height: 75px;
+  margin-top: 50px;
   position: fixed;
   right: 0;
   bottom: 0;
@@ -45,10 +48,23 @@ ul{
   color: var(--pink);
   margin-bottom: 20px;
 }
+.content{
+  height: 100%;
+  margin-bottom: 85px;
 }
+}
+
+/*desktop*/
 @media only screen and (min-width: 768px) {
+
+  .content{
+    height: 100%;
+    margin-bottom: 85px;
+  }
   .footer {
-  margin-top: 1rem;
+  display: block;
+  height: 75px;
+  margin-top: 50px;
   position: fixed;
   right: 0;
   bottom: 0;
