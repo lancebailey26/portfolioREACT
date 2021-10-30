@@ -13,4 +13,15 @@ router.get('/blogs', async (req, res) => {
   });
 
   
+router.get('/blogs/:id', async (req, res) => {
+  try {
+    const blogData = await Blogs.findByPk(req.params.id)
+    const blog = blogData.get({ plain: true });
+    console.log(blog);
+    res.json(blog)
+  } catch (err) {
+    res.status(500).json(err);
+}});
+
+  
 module.exports = router;
