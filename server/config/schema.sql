@@ -1,0 +1,12 @@
+DROP DATABASE IF EXISTS blog_db;
+CREATE DATABASE blog_db;
+
+USE blog_db;
+
+CREATE TABLE blogs (
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(30) NOT NULL UNIQUE,
+    body TEXT NOT NULL,
+    datetime DATE NOT NULL
+);
+
