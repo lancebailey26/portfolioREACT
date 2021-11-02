@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import borpa from '../assets/621.gif'
 
 export default function Blog(){
-    const val = 2
+    const val = 1
    
     const [blogs, getBlogData] = useState([])
    
@@ -12,7 +12,7 @@ export default function Blog(){
     },[])
     
     const getBlog = async () => {
-    const res = await axios.get(`secure-taiga-30232.herokuapp.com/blog/blogs/${val}`)
+    const res = await axios.get(`http://localhost:3001/blog/blogs/${val}`)
     const data = res.data
     console.log(data)
     getBlogData(data)
