@@ -12,11 +12,13 @@ export default function Routers(){
             <Router>
                 <Intro />
                 <Switch>
-                    <Route exact path="/">
+                    <Route path="/">
                         <General/>
                     </Route>
-                    <Route exact path="/blog">
+                    <Route path="/blog">
+                        <>
                         <Blog/>
+                        </>
                     </Route>
                 </Switch>
             </Router>
