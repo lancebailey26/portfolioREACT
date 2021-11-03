@@ -12,7 +12,7 @@ export default function Blog(){
     },[])
     
     const getBlog = async () => {
-    const res = await axios.get(`http://secure-taiga-30232.herokuapp.com/api/blogs/${val}`)
+    const res = await axios.get(`https://secure-taiga-30232.herokuapp.com/api/blogs/${val}`)
     const data = res.data
     console.log(data)
     getBlogData(data)
