@@ -6,7 +6,9 @@ USE blog_db;
 CREATE TABLE blogs (
     id INTEGER AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(30) NOT NULL UNIQUE,
-    body TEXT NOT NULL,
+    para1 TEXT NOT NULL,
+    para2 TEXT,
+    para3 TEXT,
     datetime DATE NOT NULL
 );
 

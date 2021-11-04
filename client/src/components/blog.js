@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import borpa from '../assets/621.gif'
 
 export default function Blog(){
-    const val = 1
+    
    
     const [blogs, getBlogData] = useState([])
    
@@ -11,24 +11,34 @@ export default function Blog(){
         getBlog()
     },[])
     
-    const getBlog = async () => {
+    const getBlog = async () => {   
+    // these are development
+    // const bloglist = await axios.get('http://localhost:3001/api/blogs')
+    // const val = bloglist.data.length
+    // const res = await axios.get(`http://localhost:3001/api/blogs/${val}`)
+    // console.log(bloglist)
+    
+    // these are production routes
+
+    const bloglist = await axios.get('https://secure-taiga-30232.herokuapp.com/api/blogs/')
+    const val = bloglist.data.length
     const res = await axios.get(`https://secure-taiga-30232.herokuapp.com/api/blogs/${val}`)
+    
     const data = res.data
     console.log(data)
     getBlogData(data)
-    // const array = Array.from(data)
-    // console.log(array)
-    // return <h1>dfafasdf</h1>
-    //fjaklfdjsklaf
+
     }
    
 console.log(blogs)
-// const date = blogs.datetime.toLocaleString();
-// console.log(date)
-    return(<div className='center'>
+
+    return(
+        <div className='content center'>
         <h2>{blogs.title}</h2>
         <h3>{blogs.datetime}</h3>
-        <p>{blogs.body}</p>
+        <p>{blogs.para1} </p>
+        <p>{blogs.para2} </p>
+        <p> {blogs.para3} </p>
         <img src={borpa} />
         </div>
     )
