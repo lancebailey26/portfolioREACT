@@ -14,9 +14,11 @@ export default function general(){
                 <li data-aos="fade-left">MySQL</li>
                 <li data-aos="fade-right">MongoDB</li>
                 <li data-aos="fade-left">React</li>
+                <li data-aos="fade-right">Python</li>
+                <li data-aos="fade-left">AWS</li>
             </ul>
-            <p>Here's my<a href={cert} target = "_blank">OSU Certification.</a></p>
-            <p>Here's a copy of<a href={resume} target = "_blank">my Resume.</a></p>
+            <p>Here's my <a href={cert} target = "_blank">OSU Certification.</a></p>
+            <p>Here's a copy of <a href={resume} target = "_blank">my Resume.</a></p>
             {/* <img src={borpa}  alt='borpa'/> */}
         </div>
     )

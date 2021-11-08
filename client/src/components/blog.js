@@ -33,7 +33,7 @@ export default function Blog(){
 console.log(blogs)
 
     return(
-        <div className='content center'>
+        <div className='blog center'>
         <h2>{blogs.title}</h2>
         <h3>{blogs.datetime}</h3>
         <p>{blogs.para1} </p>
