@@ -52,6 +52,9 @@
   color:var(--purple);
   /* margin-bottom: 5rem; */
 }
+.footer a{
+  padding: 5px;
+}
 /* a{
   padding-left: 15px;
 } */
@@ -140,6 +143,9 @@ p{
   font-size: 32px;
   text-align: center;
   color:var(--purple);
+}
+.footer a{
+  padding: 5px;
 }
 .content ul{
   font-size: 32px;
