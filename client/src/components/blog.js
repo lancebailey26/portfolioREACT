@@ -57,7 +57,11 @@ export default function Blog() {
             <button id='forward' onClick={goForward}> next</button>
             <img src={borpa} />
             <button id='backward' onClick={goBack}> back </button>
+<<<<<<< HEAD
             <p id='borpa'>i am the great borpa of blog navigation </p>
+=======
+            <p>i am the great borpa of blog navigation</p>
+>>>>>>> 05ea4184bd997c313b0c6eb7767c0298358c3435
             <h2>{blogs.title}</h2>
             <h3>{blogs.datetime}</h3>
             <p>{blogs.para1}</p>
