@@ -36,7 +36,7 @@ export default function Blog() {
     const goBack = async () => {
         const newValue = total - 1;
         // const res = await axios.get(`http://localhost:3001/api/blogs/${newValue}`)
-        const res = await axios.get(`https://boiling-earth-09518.herokuapp.com/api/blogs/${newValue}`)
+        const res = await axios.get(`http://boiling-earth-09518.herokuapp.com/api/blogs/${newValue}`)
         const data = res.data
         getBlogData(data)
         setTotal(newValue)
@@ -44,7 +44,7 @@ export default function Blog() {
     const goForward = async () => {
         const newValue = total + 1;
         // const res = await axios.get(`http://localhost:3001/api/blogs/${newValue}`)
-        const res = await axios.get(`https://boiling-earth-09518.herokuapp.com/api/blogs/${newValue}`)
+        const res = await axios.get(`http://boiling-earth-09518.herokuapp.com/api/blogs/${newValue}`)
         const data = res.data
         getBlogData(data)
         setTotal(newValue)
