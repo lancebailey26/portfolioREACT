@@ -19,13 +19,13 @@ export default function Blog() {
         // const bloglist = await axios.get('http://localhost:3001/api/blogs')
         // const val = bloglist.data.length
         // const res = await axios.get(`http://localhost:3001/api/blogs/${val}`)
-        // console.log(bloglist)
+        // // console.log(bloglist)
 
         // these are production routes
 
-        const bloglist = await axios.get('https://secure-taiga-30232.herokuapp.com/api/blogs/')
+        const bloglist = await axios.get('http://boiling-earth-09518.herokuapp.com/api/blogs/')
         const val = bloglist.data.length
-        const res = await axios.get(`https://secure-taiga-30232.herokuapp.com/api/blogs/${val}`)
+        const res = await axios.get(`http://boiling-earth-09518.herokuapp.com/api/blogs/${val}`)
         const data = res.data
         // console.log(data)
         setOriginal(val)
@@ -35,14 +35,16 @@ export default function Blog() {
     }
     const goBack = async () => {
         const newValue = total - 1;
-        const res = await axios.get(`https://secure-taiga-30232.herokuapp.com/api/blogs/${newValue}`)
+        // const res = await axios.get(`http://localhost:3001/api/blogs/${newValue}`)
+        const res = await axios.get(`https://boiling-earth-09518.herokuapp.com/api/blogs/${newValue}`)
         const data = res.data
         getBlogData(data)
         setTotal(newValue)
     }
     const goForward = async () => {
         const newValue = total + 1;
-        const res = await axios.get(`https://secure-taiga-30232.herokuapp.com/api/blogs/${newValue}`)
+        // const res = await axios.get(`http://localhost:3001/api/blogs/${newValue}`)
+        const res = await axios.get(`https://boiling-earth-09518.herokuapp.com/api/blogs/${newValue}`)
         const data = res.data
         getBlogData(data)
         setTotal(newValue)
@@ -55,6 +57,7 @@ export default function Blog() {
             <button id='forward' onClick={goForward}> next</button>
             <img src={borpa} />
             <button id='backward' onClick={goBack}> back </button>
+            <p id='borpa'>i am the great borpa of blog navigation </p>
             <h2>{blogs.title}</h2>
             <h3>{blogs.datetime}</h3>
             <p>{blogs.para1}</p>
