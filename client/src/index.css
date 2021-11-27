@@ -4,7 +4,12 @@
   --purple: #461E52;
   --pink: #DD517F;
   --orange: #E68E36;
-  --black: #000000;
+  --white: #feffff;
+  --teal: #3aafa9;
+  --darkteal: #2B7A78;
+  --mint: #DEF2F1;
+  --dark: #17252A;
+
 }
 body {
   margin: 0;
@@ -13,7 +18,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to right, var(--purple), var(--black));
+  background-color: var(--mint);
   background-Position: 'center';
   background-Size: 'cover';
   background-Repeat: 'no-repeat';
