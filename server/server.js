@@ -3,7 +3,7 @@ const express = require('express');
 const routes = require('./routes');
 const sequelize = require('./config/connection');
 const cors = require("cors");
-
+var enforce = require('express-sslify');
 const app = express();
 const PORT = process.env.PORT || 3001;
 app.use(
@@ -14,6 +14,7 @@ app.use(
       ],
     })
   );
+app.use(enforce.HTTPS({ trustProtoHeader: true }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 if (process.env.NODE_ENV === 'production') {
