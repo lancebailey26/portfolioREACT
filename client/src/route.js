@@ -6,7 +6,7 @@ import General from "./components/general.js"
 import Intro from "./components/intro.js"
 import Blog from "./components/blog.js"
 import Nav from "./components/nav.js"
-
+import Github from "./components/github.js";
 export default function Routers(){
     return(
         <main>
@@ -19,6 +19,9 @@ export default function Routers(){
                     </Route>
                     <Route exact path="/blog">
                         <Blog/>
+                    </Route>
+                    <Route exact path="/works">
+                    <Github/>
                     </Route>
                 </Switch>
             </Router>
