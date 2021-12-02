@@ -3,18 +3,26 @@ const express = require('express');
 const routes = require('./routes');
 const sequelize = require('./config/connection');
 const cors = require("cors");
-var enforce = require('express-sslify');
+
 const app = express();
 const PORT = process.env.PORT || 3001;
 app.use(
     cors({
       origin: [
-        "http://localhost:3000",
-        "http://localhost:3001",
+        "https://localhost:3000",
+        "https://localhost:3001",
       ],
     })
   );
-app.use(enforce.HTTPS({ trustProtoHeader: true }));
+app.enable('trust proxy');
+app.use(function(request, response, next) {
+
+  if (process.env.NODE_ENV != 'development' && !request.secure) {
+     return response.redirect("https://" + request.headers.host + request.url);
+  }
+
+  next();
+});
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 if (process.env.NODE_ENV === 'production') {
