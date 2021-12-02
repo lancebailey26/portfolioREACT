@@ -4,6 +4,10 @@ import { useState, useEffect } from 'react'
 import CardGroup from 'react-bootstrap/CardGroup';
 
 export default function Github(){
+    const styles = {
+        textAlign: 'center',
+        fontFamily:'Lora', 
+    }
     const [first, setFirst] = useState([{}]);
    // const [firstDesc, setFirstDesc] = useState({});
     const [second, setSecond] = useState({});
@@ -54,14 +58,18 @@ export default function Github(){
       }
       
     return(
+        <>
         <div className='github'>
+        <p style={styles}>Here are some of my favorite github projects:</p>
         <CardGroup>
         <Card title={first.repo} language={first.language} link={first.link} color={first.languageColor} image={first.image} />
         <Card title={second.repo} language={second.language} link={second.link} color={second.languageColor} image={second.image} />
         <Card title={third.repo} language={third.language} link={third.link} color={third.languageColor} image={third.image} />
         <Card title={four.repo} language={four.language} link={four.link} color={four.languageColor}image={four.image}/>
         </CardGroup>
+        
         </div>
+        </>
     )
     
 }

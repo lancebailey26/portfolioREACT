@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Abel');
-
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Lora&family=Roboto:wght@700&display=swap');
 :root{
   --blue: #556DC8; 
   --lightblue: #7998EE;
@@ -11,7 +11,6 @@
   --darkteal: #2B7A78;
   --mint: #DEF2F1;
   --dark: #17252A;
-
 }
 /*mobile*/
 @media only screen and (max-width: 992px) {
@@ -24,6 +23,7 @@
     font-size: 32px;
     text-align: center;
     color:var(--dark);
+    font-family: 'Roboto', sans-serif;
     z-index: 2;
   }
   .navi ul {
@@ -43,6 +43,9 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+  }
+  .navi li a:hover{
+    color:var(--mint)
   }
   
 .footer {
@@ -65,7 +68,7 @@
   font-size: 24px;
   margin-left: 1rem;
   margin-right: 1rem;
-  font-family: 'Abel';
+  font-family: 'Roboto', sans-serif;
 }
 .footer a{
   padding: 5px;
@@ -91,8 +94,8 @@ p{
   /* margin: auto; */
   /* width: 50%; */
   /* border: 3px solid var(--darkteal); */
-  font-family: 'Abel';
-  padding: 10px;
+  font-family: 'Lora', serif;
+  /* padding: 10px; */
   text-align: center;
   color: var(--dark);
   z-index: 1;
@@ -103,6 +106,8 @@ p{
   height: 100%;
   margin-bottom: 2rem;
   padding-top:5rem;
+  padding-bottom: 5rem;
+  font-family: 'Lora', serif;
   
 }
 .header{
@@ -127,6 +132,8 @@ p{
   font-size: 10px;
 }
 .github{
+  margin-top: 5rem;
+  padding-top: 5rem;
   margin-bottom:2rem;
   padding-bottom: 5rem;
   z-index: 1;
@@ -147,7 +154,7 @@ p{
     align-items: center;
     color:var(--dark);
     margin-bottom: 5rem;
-    font-family: 'Abel';
+    font-family: 'Roboto', sans-serif;
     z-index: 2;
 
   }
@@ -169,6 +176,9 @@ p{
     padding: 14px 16px;
     text-decoration: none;
   }
+  .navi li a:hover{
+    color:var(--mint)
+  }
   .blog button{
     /* border-radius: 10px; */
     /* color: var(--darkteal); */
@@ -176,12 +186,13 @@ p{
     font-size: 24px;
     margin-left: 1rem;
     margin-right: 1rem;
-    font-family: 'Abel';
+    font-family: 'Roboto', sans-serif;
   }
   .content{
     height: 100%;
     margin-bottom: 2rem;
     padding-top: 5rem;
+    padding-bottom: 5rem;
     z-index: 1;
   }
   .footer {
@@ -225,8 +236,8 @@ p{
   /* margin: auto; */
   /* width: 50%; */
   /* border: 3px solid var(--darkteal); */
-  font-family: 'Abel';
-  padding: 10px;
+  font-family: 'Lora', serif;
+  /* padding: 10px; */
   text-align: center;
   color: var(--dark);
   /* margin-bottom: 5rem; */

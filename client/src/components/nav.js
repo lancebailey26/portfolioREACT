@@ -5,7 +5,7 @@ export default function nav() {
             <ul>
                 <li><a href="/">Lance</a></li>
                 <li><a href="/blog">Blog</a></li>
-                <li><a href="/works">Works</a></li>
+                <li><a href="/portfolio">Portfolio</a></li>
             </ul>
         </div>
     )

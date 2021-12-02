@@ -20,7 +20,7 @@ export default function Routers(){
                     <Route exact path="/blog">
                         <Blog/>
                     </Route>
-                    <Route exact path="/works">
+                    <Route exact path="/portfolio">
                     <Github/>
                     </Route>
                 </Switch>
