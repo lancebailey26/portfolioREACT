@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-import borpa from '../assets/621.gif'
+
 
 export default function Blog() {
 

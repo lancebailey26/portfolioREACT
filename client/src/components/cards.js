@@ -1,19 +1,25 @@
-import Card from 'react-bootstrap/Card'
+import { Card } from "react-bootstrap"
+
 
 export default function card(props){
+  const lang = {
+    color: props.color
+  }
+  const card = {
+    textAlign: 'center  ' 
+  }
 return(
 
   <Card>
-    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Img variant="top" src={props.image} />
     <Card.Body>
-      <Card.Title><a href={props.link}>{props.title}</a></Card.Title>
+      <Card.Title><a href={props.link} style={card}>{props.title}</a></Card.Title>
       <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
+          {props.desc}
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Language: {props.language}</small>
+        <small> Language:</small><small style={lang}> {props.language}</small>
     </Card.Footer>
   </Card>
 )

@@ -129,6 +129,9 @@ p{
 .github{
   margin-bottom:2rem;
   padding-bottom: 5rem;
+  z-index: 1;
+  width: 80%;
+  margin: auto;
 }
 }
 
@@ -252,7 +255,10 @@ p{
   font-size: 10px;
 }
 .github{
-  margin-bottom:2rem;
+  padding-top:8rem;
   padding-bottom: 5rem;
+  z-index: 1;
+  width: 80%;
+  margin: auto;
 }
 }
