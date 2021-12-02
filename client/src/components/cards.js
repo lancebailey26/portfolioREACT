@@ -11,13 +11,12 @@ export default function card(props){
 return(
 
   <Card>
-    <Card.Img variant="top" src={props.image} />
-    <Card.Body>
+    <a href={props.link}>
+    <Card.Img variant="top" src={props.image}/>
+    </a>
+    {/* <Card.Body>
       <Card.Title><a href={props.link} style={card}>{props.title}</a></Card.Title>
-      <Card.Text>
-          {props.desc}
-      </Card.Text>
-    </Card.Body>
+    </Card.Body> */}
     <Card.Footer>
         <small> Language:</small><small style={lang}> {props.language}</small>
     </Card.Footer>
