@@ -4,6 +4,11 @@
 
 My ever evolving website that will serve as a place for me to showcase my knowledge and work, along with posting blogs.
 
+## Technologies
+* MySQL
+* Express
+* React
+* Node
 
 ## https://lancebailey.tech
 
