@@ -1,11 +1,10 @@
 import cert from '../assets/cert.pdf'
-// import borpa from '../assets/621.gif'
 import resume from '../assets/resume.pdf'
 export default function general(){
     return(
         <div className='content center'>
             
-            <p>After working in the skilled trades for most of my adult life, I decided to make a switch to the world of Web Development.</p>
+            <p>After working in the skilled trades for most of my adult life, I decided to make a switch to Full Stack Web Development.</p>
             <p>Below you'll find some of the tools I'm most familiar with, but the list is ever growing.</p>
             <ul>
                 <li data-aos="fade-right">JavaScript</li>
