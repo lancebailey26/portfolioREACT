@@ -5,12 +5,12 @@ import Contact from "./components/contact.js"
 import General from "./components/general.js"
 import Intro from "./components/intro.js"
 import Blog from "./components/blog.js"
-import Nav from "./components/nav.js"
+import Navigation from "./components/nav.js"
 import Github from "./components/github.js";
 export default function Routers(){
     return(
         <main>
-            <Nav/>
+            <Navigation/>
             <Router>
                 <Switch>
                     <Route exact path="/">

@@ -53,7 +53,7 @@ export default function Blog() {
     // console.log('original: ' + original)
     // console.log("blog id: " + total)
     return (
-        <div className=' center blog'>
+        <div className='blog'>
             <button id='forward' onClick={goForward}> Next</button>
             {/* <img src={borpa} /> */}
             <button id='backward' onClick={goBack}> Back </button>

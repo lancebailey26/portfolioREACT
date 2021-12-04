@@ -14,38 +14,12 @@
 }
 /*mobile*/
 @media only screen and (max-width: 992px) {
-  .navi {
-    display: block;
-    position: fixed;
-    right: 0;
-    left: 0;
+  .nav {
     background-color: var(--darkteal);
     font-size: 32px;
-    text-align: center;
     color:var(--dark);
     font-family: 'Roboto', sans-serif;
     z-index: 2;
-  }
-  .navi ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  .navi li {
-    float: left;
-  }
-  
-  .navi li a {
-    display: block;
-    color: var(--dark);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  .navi li a:hover{
-    color:var(--mint)
   }
   
 .footer {
@@ -90,37 +64,34 @@ p{
   font-size: 24px;
   
 }
-.center {
-  /* margin: auto; */
-  /* width: 50%; */
-  /* border: 3px solid var(--darkteal); */
-  font-family: 'Lora', serif;
-  /* padding: 10px; */
-  text-align: center;
-  color: var(--dark);
-  z-index: 1;
-  /* margin-bottom: 5rem; */
-  /*   */
-}
+
 .content{
   height: 100%;
   margin-bottom: 2rem;
-  padding-top:5rem;
+  padding-top:2rem;
   padding-bottom: 5rem;
+  font-family: 'Lora', serif;
+  margin: auto;
+  width: 75%;
+  text-align: center;
   font-family: 'Lora', serif;
   
 }
 .header{
   padding-top: 5rem;
+  text-align: center;
 }
 .blog{
   padding-top:5rem;
   padding-bottom:5rem;
   width: 75%;
   margin: auto;
+  text-align: center;
+  font-family: 'Lora', serif;
 }
 .blog h2{
-  font-size: 32px
+  font-size: 32px;
+  margin-top: 2rem;
 }
 .blog h3{
   font-size: 18px;
@@ -139,44 +110,23 @@ p{
   z-index: 1;
   width: 80%;
   margin: auto;
+  font-family: 'Lora', serif;
 }
 }
 
 /*desktop*/
 @media only screen and (min-width: 768px) {
-  .navi {
-    display: block;
-    position: fixed;
-    right: 0;
-    left: 0;
+  .nav {
     background-color: var(--darkteal);
     font-size: 32px;
-    align-items: center;
     color:var(--dark);
-    margin-bottom: 5rem;
     font-family: 'Roboto', sans-serif;
     z-index: 2;
-
   }
-  .navi ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  .navItem{
+    color: white
   }
-  
-  .navi li {
-    float:left;
-  }
-  
-  .navi li a {
-    display: block;
-    color: var(--dark);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  .navi li a:hover{
+  .navbar-light .navbar-brand{
     color:var(--mint)
   }
   .blog button{
@@ -191,9 +141,11 @@ p{
   .content{
     height: 100%;
     margin-bottom: 2rem;
-    padding-top: 5rem;
+    padding-top: 2rem;
     padding-bottom: 5rem;
     z-index: 1;
+    text-align: center;
+    font-family: 'Lora', serif;
   }
   .footer {
   display: block;
@@ -232,29 +184,22 @@ p{
 .transparent{
   background: rgba(0, 0, 0, 0.3)
 }
-.center {
-  /* margin: auto; */
-  /* width: 50%; */
-  /* border: 3px solid var(--darkteal); */
-  font-family: 'Lora', serif;
-  /* padding: 10px; */
-  text-align: center;
-  color: var(--dark);
-  /* margin-bottom: 5rem; */
-  /* padding-top: 5rem; */
-  z-index: 1;
-}
 .header{
   padding-top: 5rem;
+  text-align: center;
+  font-family: 'Lora', serif;
 }
 .blog{
-  padding-top:5rem;
+  padding-top:7rem;
   padding-bottom:5rem;
   width: 75%;
   margin: auto;
+  text-align: center;
+  font-family: 'Lora', serif;
 }
 .blog h2{
-  font-size: 32px
+  font-size: 32px;
+  margin-top: 2rem;
 }
 .blog h3{
   font-size: 18px;
