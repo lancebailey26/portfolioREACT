@@ -8,11 +8,13 @@ export default function Navigation() {
         fontSize: 32
     }
     const right = {
+        color: '#17252A',
         float: 'right',
         fontSize: 12,
         
     }
     const rtl ={
+        color: '#17252A',
         direction: 'rtl'
     }
 
