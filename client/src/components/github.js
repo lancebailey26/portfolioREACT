@@ -54,7 +54,7 @@ export default function Github(){
     //     return <div className="loading center"><h1>Loading...</h1></div>;
     // }
     if (isLoading) {
-        return <div className="content center"><h1>Loading...</h1></div>;
+        return <div className="github"><p style={styles}>Loading...</p></div>;
       }
       
     return(
