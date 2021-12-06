@@ -11,6 +11,10 @@
   --darkteal: #2B7A78;
   --mint: #DEF2F1;
   --dark: #17252A;
+  --cream: #F3F1F5;
+  --periwinkle: #f0d9ff;
+  --pastelpurple: #BFA2DB;
+  --pastelgray: #7F7C82;
 }
 /*mobile*/
 @media only screen and (max-width: 992px) {
@@ -116,10 +120,13 @@ p{
 
 /*desktop*/
 @media only screen and (min-width: 768px) {
+  body{
+    background-color: var(--cream);
+  }
   .nav {
-    background-color: var(--darkteal);
+    background-color: var(--pastelpurple);
     font-size: 32px;
-    color:var(--dark);
+    color:var(--pastelgray);
     font-family: 'Roboto', sans-serif;
     z-index: 2;
   }
@@ -127,7 +134,7 @@ p{
     color: white
   }
   .navbar-light .navbar-brand{
-    color:var(--mint)
+    color:var(--pastelgray)
   }
   .blog button{
     /* border-radius: 10px; */
@@ -138,27 +145,49 @@ p{
     margin-right: 1rem;
     font-family: 'Roboto', sans-serif;
   }
+  
   .content{
     height: 100%;
-    margin-bottom: 2rem;
+    width: 75%;
+    margin: auto;
+    /* margin-bottom: 2rem; */
     padding-top: 2rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     z-index: 1;
     text-align: center;
     font-family: 'Lora', serif;
   }
+  .content p{
+    color: black;
+    text-decoration: none;
+  }
+  .container{
+    display: flex;
+    flex-direction: row;
+  }
+  .technologies{
+    order: 0;
+  }
+  .nottech{
+    order: 1;
+  }
+  .defnottech{
+    order: 2;
+  }
   .footer {
   display: block;
-  /* margin-top: 5rem; */
+  /* margin-top: 5rem;*/
   position: fixed;
   right: 0;
-  bottom: 0;
+  bottom: 0px;
   left: 0;
   padding: 1rem;
-  background-color: var(--darkteal);
+  width: 100%;
+  margin: auto;
+  background-color: var(--pastelpurple);
   font-size: 32px;
   text-align: center;
-  color:var(--dark);
+  color:var(--pastelpurple);
 }
 .footer a{
   padding: 5px;
@@ -177,17 +206,23 @@ font-size: 42px;
 p{
   font-size: 32px;
 }
-.header{
-  margin-bottom: 0px;
 
-}
 .transparent{
   background: rgba(0, 0, 0, 0.3)
 }
 .header{
-  padding-top: 5rem;
-  text-align: center;
+  width: 75%;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin: auto;
+  margin-top: 7rem;
   font-family: 'Lora', serif;
+  margin-bottom: 0px;
+  border: 5px solid var(--purple);
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px  var(--pastelpurple);
 }
 .blog{
   padding-top:7rem;

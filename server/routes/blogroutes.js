@@ -8,7 +8,7 @@ router.get('/blogs', async (req, res) => {
       console.log(blogs);
     res.json(blogs)
     } catch (err) {
-      console.error('you fucked up', err)
+      console.error(err)
     }
   });
 
