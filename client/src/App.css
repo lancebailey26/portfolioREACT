@@ -55,10 +55,10 @@
   padding-left: 15px;
 } */
 h1{
-font-size: 42px;
+font-size: 20px;
 }
 p{
-  font-size: 32px;
+  font-size: 18px;
 }
 .transparent{
   background: rgba(0, 0, 0, 0.3)
@@ -71,19 +71,86 @@ p{
 
 .content{
   height: 100%;
-  margin-bottom: 2rem;
-  padding-top:2rem;
-  padding-bottom: 5rem;
-  font-family: 'Lora', serif;
-  margin: auto;
   width: 75%;
+  margin: auto;
+  /* margin-bottom: 2rem; */
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  z-index: 1;
+  text-align: center;
+  font-family: 'Lora', serif;
+}
+.content p{
+  color: black;
+  text-decoration: none;
+}
+.contentContainer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
+.box {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.technologies{
+  border: 5px solid var(--purple);
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px  var(--pastelpurple);
+  padding-right: 1rem;
+  order: 0;
+}
+.nottech{
+  border: 5px solid var(--purple);
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px  var(--pastelpurple);
+  order: 1;
+}
+.defnottech{
+  border: 5px solid var(--purple);
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px  var(--pastelpurple);
+  order: 2;
+}
+.playlist{
+  height: 90%;
+  border-radius: 10px;
+  background-color: black;
+}
+.transparent{
+  background: rgba(0, 0, 0, 0.3)
+}
+.header{
+  font-size: 20px;
+  width: 75%;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin: auto;
+  margin-top: 7rem;
+  font-family: 'Lora', serif;
+  margin-bottom: 0px;
+  border: 5px solid var(--purple);
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px  var(--pastelpurple);
+}
+.blog{
+  padding-top:7rem;
+  padding-bottom:5rem;
+  width: 75%;
+  margin: auto;
   text-align: center;
   font-family: 'Lora', serif;
   
 }
-.header{
-  padding-top: 5rem;
-  text-align: center;
+.blogContent{
+  margin-top: 1rem;
+  border: 5px solid var(--purple);
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px  var(--pastelpurple);
+  padding: 1rem
 }
 .blog{
   padding-top:5rem;
@@ -123,6 +190,7 @@ p{
   body{
     background-color: var(--cream);
   }
+  
   .nav {
     background-color: var(--pastelpurple);
     font-size: 32px;
@@ -139,7 +207,7 @@ p{
   .blog button{
     /* border-radius: 10px; */
     /* color: var(--darkteal); */
-    background-color: var(--teal);
+    background-color: var(--pastelpurple);
     font-size: 24px;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -148,7 +216,7 @@ p{
   
   .content{
     height: 100%;
-    width: 100%;
+    width: 75%;
     margin: auto;
     /* margin-bottom: 2rem; */
     padding-top: 2rem;
@@ -161,15 +229,18 @@ p{
     color: black;
     text-decoration: none;
   }
-  .container{
+  .contentContainer{
     display: flex;
     flex-direction: row;
-    width: 75%;
+    width: 100%;
     margin: auto;
+    align-items: stretch;
+    justify-content: center;
   }
   .box {
     margin-left: 1rem;
     margin-right: 1rem;
+    padding: 1rem;
   }
   .technologies{
     border: 5px solid var(--purple);
@@ -193,12 +264,14 @@ p{
   .footer {
   display: block;
   /* margin-top: 5rem;*/
-  position: fixed;
+  /* position: fixed;
   right: 0;
+  
+  left: 0; */
   bottom: 0px;
-  left: 0;
   padding: 1rem;
   width: 100%;
+  height:100%;
   margin: auto;
   background-color: var(--pastelpurple);
   font-size: 32px;
@@ -207,6 +280,9 @@ p{
 }
 .footer a{
   padding: 5px;
+}
+.footcontain{
+  height:100%
 }
 .content ul{
   font-size: 32px;
@@ -224,7 +300,11 @@ font-size: 42px;
 p{
   font-size: 32px;
 }
-
+.playlist{
+  height: 90%;
+  border-radius: 10px;
+  background-color: black;
+}
 .transparent{
   background: rgba(0, 0, 0, 0.3)
 }
@@ -249,6 +329,14 @@ p{
   margin: auto;
   text-align: center;
   font-family: 'Lora', serif;
+  
+}
+.blogContent{
+  margin-top: 1rem;
+  border: 5px solid var(--purple);
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px  var(--pastelpurple);
+  padding: 1rem
 }
 .blog h2{
   font-size: 32px;
@@ -269,5 +357,9 @@ p{
   z-index: 1;
   width: 80%;
   margin: auto;
+}
+.card{
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 }

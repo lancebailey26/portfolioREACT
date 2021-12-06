@@ -39,7 +39,7 @@ export default function Navigation() {
             <Nav className="me-auto">
               <Nav.Link href="/blog">BLOG</Nav.Link>
               <Nav.Link href="/portfolio">PORTFOLIO</Nav.Link>
-              <Nav.Link>KIT</Nav.Link>
+              <Nav.Link href="/kit">KIT</Nav.Link>
             </Nav>
             <Navbar.Brand style={right}>{quote}
             <br/>

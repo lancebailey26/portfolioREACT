@@ -3,7 +3,16 @@ import { useState, useEffect } from 'react';
 
 
 export default function Blog() {
+    const styles = {
+        float:'right'
+    }
+    const fullStack = {
+        float: 'right',
+        color: '#f0d9ff',
+        textShadow: '0 0 5px #000'
 
+
+    }
 
     const [blogs, getBlogData] = useState([])
     const [total, setTotal] = useState(0)
@@ -38,17 +47,23 @@ export default function Blog() {
         setTotal(newValue)
     }
 
-    return (
+    return (<>
+        <div data-aos='fade-right' data-aos-duration="1500" className='header'>
+        <h1>BLOG</h1>
+        <p style={fullStack}> where i write about tech and life </p> 
+        </div>
+
         <div className='blog'>
             <button id='forward' onClick={goForward}> Next</button>
-     
             <button id='backward' onClick={goBack}> Back </button>
-           
+           <div data-aos="flip-up" data-aos-duration="1500" className='blogContent'>
             <h2>{blogs.title}</h2>
             <h3>{blogs.datetime}</h3>
             <p>{blogs.para1}</p>
             <p>{blogs.para2}</p>
             <p>{blogs.para3}</p>
+            </div>
         </div>
+        </>
     )
 }
