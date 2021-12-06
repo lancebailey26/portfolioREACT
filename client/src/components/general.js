@@ -4,8 +4,10 @@ export default function general(){
     return(
         <div className='content'>
             <div className='container'>
-            <div  data-aos="flip-up"  data-aos-duration="3000" className='technologies'>
+            <div  data-aos="flip-up"  data-aos-duration="1500" className='technologies box'>
             <ul>
+                <li> things i like </li>
+                <br/>
                 <li data-aos="fade-right">JavaScript</li>
                 <li data-aos="fade-left">jQuery</li>
                 <li data-aos="fade-right">HTML/CSS</li>
@@ -15,12 +17,11 @@ export default function general(){
                 <li data-aos="fade-right">Python</li>
                 <li data-aos="fade-left">AWS</li>
             </ul>
-            </div>
-            <div className='nottech'>
+           
             <p>fdjaklfsdjaklfjklasdfjaskljfklfdsfsda
             fdsafdsafdsafdasf sdafsdafsda fsdafsdaf dsaf</p>
             </div>
-            <div className='defnottech'>
+            <div data-aos="flip-up"  data-aos-duration="1500" className='defnottech box'>
                 <p>xczczxczxcxzczczx</p>
             </div>
             </div>

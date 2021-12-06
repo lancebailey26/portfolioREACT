@@ -2,11 +2,14 @@ export default function intro(){
     const styles = {
         float:'right'
     }
+    const fullStack = {
+        float: 'right',
+        color: '#f0d9ff'
+    }
     return (
-        <div data-aos='flip-right' data-aos-duration="3000" className='header'>
+        <div data-aos='flip-right' data-aos-duration="1500" className='header'>
             <h1>Hey, I'm Lance Bailey</h1>
-            <h2 style={styles}
-            >I'm a Full Stack Web Developer</h2>
+            <p style={fullStack}> Full Stack Web Developer </p><p style={styles}>I'm a</p> 
         </div>
     )
 }
