@@ -8,10 +8,12 @@ export default function Blog() {
     }
     const fullStack = {
         float: 'right',
-        color: '#f0d9ff',
-        textShadow: '0 0 5px #000'
+        color: '#BFA2DB',
+        fontWeight: 'bold'
+    }
 
-
+    const milk ={
+        fontFamily: 'lemonmilk'
     }
 
     const [blogs, getBlogData] = useState([])
@@ -57,7 +59,7 @@ export default function Blog() {
             <button id='forward' onClick={goForward}> Next</button>
             <button id='backward' onClick={goBack}> Back </button>
            <div data-aos="flip-up" data-aos-duration="1500" className='blogContent'>
-            <h2>{blogs.title}</h2>
+            <h2 style={milk}>{blogs.title}</h2>
             <h3>{blogs.datetime}</h3>
             <p>{blogs.para1}</p>
             <p>{blogs.para2}</p>

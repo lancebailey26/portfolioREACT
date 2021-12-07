@@ -4,8 +4,8 @@ export default function intro(){
     }
     const fullStack = {
         float: 'right',
-        color: '#f0d9ff',
-        textShadow: '0 0 5px #000',
+        color: '#BFA2DB',
+        fontWeight: 'bold'
 
 
     }

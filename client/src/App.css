@@ -16,37 +16,43 @@
   --pastelpurple: #BFA2DB;
   --pastelgray: #7F7C82;
 }
+@font-face {
+  font-family: 'lemonmilk';
+  src: url(./assets/LemonMilkMedium-mLZYV.otf);
+}
+@font-face {
+  font-family: 'josefin';
+  src: url(./assets/JosefinSansRegular-x3LYV.ttf);
+}
 /*mobile*/
 @media only screen and (max-width: 992px) {
   .nav {
-    background-color: var(--darkteal);
+    background-color: var(--pastelpurple);
     font-size: 32px;
-    color:var(--dark);
-    font-family: 'Roboto', sans-serif;
+    color:var(--pastelgray);
+    font-family: 'lemonmilk';
     z-index: 2;
+    overflow: auto;
   }
   
 .footer {
   display: block;
-  /* margin-top: 5rem; */
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  bottom: 0px;
   padding: 1rem;
-  background-color: var(--darkteal);
+  width: 100%;
+  height:100%;
+  margin: 1rem auto auto auto;
+  background-color: var(--pastelpurple);
   font-size: 32px;
   text-align: center;
-  color:var(--dark);
-  /* margin-bottom: 5rem; */
+  color:var(--pastelpurple);
 }
 .blog button{
-  border-radius: 2px;
-  background-color: var(--teal);
-  font-size: 24px;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  font-family: 'Roboto', sans-serif;
+  background-color: var(--pastelpurple);
+    font-size: 24px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-family: 'lemonmilk'
 }
 .footer a{
   padding: 5px;
@@ -74,7 +80,7 @@ p{
   width: 75%;
   margin: auto;
   /* margin-bottom: 2rem; */
-  padding-top: 2rem;
+  
   padding-bottom: 3rem;
   z-index: 1;
   text-align: center;
@@ -91,16 +97,39 @@ p{
   margin: auto;
 }
 .box {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+    border: 5px solid var(--purple);
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px  var(--pastelpurple);
 }
 .technologies{
   border: 5px solid var(--purple);
   border-radius: 10px;
   box-shadow: 10px 5px 5px  var(--pastelpurple);
   padding-right: 1rem;
+  margin-bottom: 1rem;
   order: 0;
 }
+.technologies ul{
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  line-height: 2.5rem;
+}
+.technologies ul li {
+  
+  display: block;
+  font-size: 1.5rem;
+  padding: 0.125rem 0.25rem;
+  text-decoration: none;
+  position: relative;
+}
+
 .nottech{
   border: 5px solid var(--purple);
   border-radius: 10px;
@@ -122,7 +151,6 @@ p{
   background: rgba(0, 0, 0, 0.3)
 }
 .header{
-  font-size: 20px;
   width: 75%;
   padding-top: 2rem;
   padding-bottom: 5rem;
@@ -130,8 +158,8 @@ p{
   padding-left: 2rem;
   margin: auto;
   margin-top: 7rem;
-  font-family: 'Lora', serif;
-  margin-bottom: 0px;
+  font-family: 'lemonmilk';
+  margin-bottom: 1rem;
   border: 5px solid var(--purple);
   border-radius: 10px;
   box-shadow: 10px 5px 5px  var(--pastelpurple);
@@ -175,9 +203,9 @@ p{
 }
 .github{
   margin-top: 5rem;
-  padding-top: 5rem;
-  margin-bottom:2rem;
-  padding-bottom: 5rem;
+  padding-top: 1rem;
+  margin-bottom:3rem;
+  padding-bottom: 1rem;
   z-index: 1;
   width: 80%;
   margin: auto;
@@ -195,7 +223,7 @@ p{
     background-color: var(--pastelpurple);
     font-size: 32px;
     color:var(--pastelgray);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'lemonmilk';
     z-index: 2;
   }
   .navItem{
@@ -211,7 +239,7 @@ p{
     font-size: 24px;
     margin-left: 1rem;
     margin-right: 1rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'lemonmilk'
   }
   
   .content{
@@ -223,7 +251,7 @@ p{
     padding-bottom: 3rem;
     z-index: 1;
     text-align: center;
-    font-family: 'Lora', serif;
+    font-family: 'josefin'
   }
   .content p{
     color: black;
@@ -241,6 +269,10 @@ p{
     margin-left: 1rem;
     margin-right: 1rem;
     padding: 1rem;
+    border: 5px solid var(--purple);
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px  var(--pastelpurple);
+    
   }
   .technologies{
     border: 5px solid var(--purple);
@@ -248,6 +280,23 @@ p{
     box-shadow: 10px 5px 5px  var(--pastelpurple);
     padding-right: 1rem;
     order: 0;
+  }
+  .technologies ul{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    line-height: 2.5rem;
+  }
+  .technologies ul li {
+    
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.125rem 0.25rem;
+    text-decoration: none;
+    position: relative;
   }
   .nottech{
     border: 5px solid var(--purple);
@@ -262,21 +311,16 @@ p{
     order: 2;
   }
   .footer {
-  display: block;
-  /* margin-top: 5rem;*/
-  /* position: fixed;
-  right: 0;
-  
-  left: 0; */
-  bottom: 0px;
-  padding: 1rem;
-  width: 100%;
-  height:100%;
-  margin: auto;
-  background-color: var(--pastelpurple);
-  font-size: 32px;
-  text-align: center;
-  color:var(--pastelpurple);
+    display: block;
+    bottom: 0px;
+    padding: 1rem;
+    width: 100%;
+    height:100%;
+    margin: auto;
+    background-color: var(--pastelpurple);
+    font-size: 32px;
+    text-align: center;
+    color:var(--pastelpurple);
 }
 .footer a{
   padding: 5px;
@@ -309,26 +353,26 @@ p{
   background: rgba(0, 0, 0, 0.3)
 }
 .header{
-  width: 75%;
-  padding-top: 2rem;
-  padding-bottom: 5rem;
-  padding-right: 2rem;
-  padding-left: 2rem;
-  margin: auto;
-  margin-top: 7rem;
-  font-family: 'Lora', serif;
-  margin-bottom: 0px;
-  border: 5px solid var(--purple);
-  border-radius: 10px;
-  box-shadow: 10px 5px 5px  var(--pastelpurple);
+    width: 75%;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin: auto;
+    margin-top: 7rem;
+    font-family: 'lemonmilk';
+    margin-bottom: 1rem;
+    border: 5px solid var(--purple);
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px  var(--pastelpurple);
 }
 .blog{
-  padding-top:7rem;
+  padding-top:1rem;
   padding-bottom:5rem;
   width: 75%;
   margin: auto;
   text-align: center;
-  font-family: 'Lora', serif;
+  font-family: 'josefin'
   
 }
 .blogContent{
@@ -352,11 +396,12 @@ p{
   font-size: 10px;
 }
 .github{
-  padding-top:8rem;
-  padding-bottom: 5rem;
+  padding-top:1rem;
+  padding-bottom: 1rem;
   z-index: 1;
-  width: 80%;
-  margin: auto;
+  width: 75%;
+  margin: 1rem auto 1rem auto;
+  font-family: 'josefin';
 }
 .card{
   margin-right: 1rem;

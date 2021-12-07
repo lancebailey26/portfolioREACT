@@ -2,21 +2,37 @@ import Card from './cards'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import CardGroup from 'react-bootstrap/CardGroup';
+import cert from '../assets/cert.pdf'
+import resume from '../assets/resume.pdf'
 
 export default function Github() {
     const styles = {
         textAlign: 'center',
-        fontFamily: 'Lora',
+        fontFamily:'josefin',
+        color: '#BFA2DB',
+    }
+    const gray = {
+        backgroundColor: '#7F7C82'
     }
     const header = {
         float:'right'
     }
+    const red ={
+        color: 'red'
+    }
     const fullStack = {
         float: 'right',
-        color: '#f0d9ff',
-        textShadow: '0 0 5px #000'
-
-
+        color: '#BFA2DB',
+        fontWeight: 'bold'
+    }
+    const yellow = {
+        color: 'yellow'
+    }
+    const blue = {
+        color: '#3776ab'
+    }
+    const orange = {
+        color: 'orange'
     }
     const [first, setFirst] = useState([{}]);
     const [second, setSecond] = useState({});
@@ -61,16 +77,27 @@ export default function Github() {
             <h1>PORTFOLIO</h1>
             <p style={fullStack}> what i'm working on </p> 
         </div>
-       <div className='content'>
-       <p style={styles}> I'm always working on my craft: </p>
+        <div className='container'>
+            <div className='contentContainer'>
+                <div style={gray} className='technologies box' data-aos='flip-up' data-aos-duration="1500">
+                <p style={styles}>Toolbelt</p>
                 <ul>
-                    <li>Angular</li>
-                    <li>Python</li>
-                </ul>
-                <br/>
-               
+                <li data-aos="fade-right" style={yellow}>JavaScript</li>
+                <li data-aos="fade-left" style={blue}>React</li>
+                <li data-aos="fade-left" style={yellow}>jQuery</li>
+                <li data-aos="fade-left"style={red}>MySQL</li>
+                <li data-aos="fade-right" style={red}>MongoDB</li>
+                <li data-aos="fade-right"style={blue}>Python</li>
+                <li data-aos="fade-left" style={orange}>AWS</li>
+            </ul>
+                </div>
+                <div className='defnottech box' data-aos='flip-up' data-aos-duration="1500">
+                <p style={styles}><a href={cert} target = "_blank">OSU Certification</a></p>
+                <p style={styles}><a href={resume} target = "_blank">Resume</a></p>
+                </div>
+            </div>
        </div>
-            <div className='github'>
+            <div className='github box'  data-aos='fade-left' data-aos-duration="1500" >
             <p style={styles}>Here are some of my favorite github projects:</p>
                 <CardGroup>
                     <Card title={first.repo} language={first.language} link={first.link} color={first.languageColor} image={first.image} />
