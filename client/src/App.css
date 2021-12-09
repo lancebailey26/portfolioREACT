@@ -95,6 +95,7 @@ p{
   flex-direction: column;
   width: 100%;
   margin: auto;
+  font-family: 'josefin';
 }
 .box {
   margin-top: 1rem;
@@ -143,9 +144,9 @@ p{
   order: 2;
 }
 .playlist{
-  height: 90%;
+  margin-top: 1rem;
   border-radius: 10px;
-  background-color: black;
+  
 }
 .transparent{
   background: rgba(0, 0, 0, 0.3)
@@ -287,6 +288,7 @@ p{
     margin: auto;
     align-items: stretch;
     justify-content: center;
+    margin-bottom: 1rem;
   }
   .box {
     margin-left: 1rem;
@@ -368,9 +370,9 @@ p{
   font-size: 32px;
 }
 .playlist{
-  height: 90%;
+  margin-top: 1rem;
   border-radius: 10px;
-  background-color: black;
+  background-color: var(--cream);
 }
 .transparent{
   background: rgba(0, 0, 0, 0.3)

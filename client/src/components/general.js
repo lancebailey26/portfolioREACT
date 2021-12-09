@@ -14,6 +14,9 @@ const twitch =
     const nowrap = {
         whiteSpace: 'nowrap'
     }
+    const spot ={
+      color: '#BFA2DB'
+    }
   const left = {
     textAlign: "left",
   };
@@ -31,7 +34,7 @@ const twitch =
   return (
     <div className="content">
       <div className="contentContainer">
-        <div data-aos="flip-up" data-aos-duration="1500" style={nowrap} className=" box">
+        <div data-aos="flip-up" data-aos-duration="1500" style={nowrap} className="box">
           <ul style={left}>
             <li>
               <a  style={link} href="https://www.github.com/lancebailey26">
@@ -126,13 +129,30 @@ const twitch =
         </div>
         <div data-aos="flip-up" data-aos-duration="1500" className='box'>
             <h3 style={lemonmilk}> Lance (Noun): </h3>
-            <br/>
+            <br/> <p style={flair}> <a style={spot} href='mailto:lancebailey222@gmail.com'>lancebailey222@gmail.com </a></p>
             <p>A Midwest developer with a knack for making functional apps. *</p>
             <br/>
             <br/>
             <br/>
             <p style={flair}></p>
             <p style={flair}>* Rolex wearing, diamond ring wearing, limousine riding, jet flying, kiss stealing, wheeling dealing son of a gun.</p>
+        </div>
+      </div>
+      <div className='contentContainer'>
+        <div className='box'>
+        <a style={spot} href='https://open.spotify.com/user/12131896438?si=72dfef234a4249a8'><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+</svg></a>
+<br/>
+        <iframe className='playlist' src="https://open.spotify.com/embed/playlist/0M94woUpkj37XYSWFtXYV3?utm_source=generator&amp;theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+        <div className='box'>
+          <p>I like video games, sports, Star Wars, and Marvel. <br/>
+          I was a English Major for about as long as it takes to drink a cup of coffee,<br/>
+          so I take pride in my writing and vocabulary.<br/>
+          <br/>
+          But boy, do I hate writing about myself.
+          </p>
         </div>
       </div>
     </div>

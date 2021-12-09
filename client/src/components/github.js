@@ -97,6 +97,7 @@ export default function Github() {
                 </div>
             </div>
        </div>
+      
             <div className='github box'  data-aos='fade-left' data-aos-duration="1500" >
             <p style={styles}>Here are some of my favorite github projects:</p>
                 <CardGroup>
@@ -106,6 +107,12 @@ export default function Github() {
                     <Card title={four.repo} language={four.language} link={four.link} color={four.languageColor} image={four.image} />
                 </CardGroup>
             </div>
+            <div className='github box'  data-aos='fade-left' data-aos-duration="1500" >
+          <p style={styles}> My toolbelt is an ever-expanding bottomless pit of knowledge. </p>
+          <p style={styles}>    My personal favorites are React and general JavaScript. </p>
+          
+           <p style={styles}> This website is built in hook based React. </p>
+       </div>
             </>
     )
 
