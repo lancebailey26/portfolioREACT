@@ -19,7 +19,7 @@ export default function kit(){
             <p style={fullStack}> what i use on a daily basis </p> 
         </div>
         <div className="content">
-            <div className='kitContainer'>
+            <div data-aos="flip-up" data-aos-duration="1500" className='kitContainer'>
             <h2>DESKTOP</h2>
             <ul style={text}>
                 <li>Keyboard: <a href='https://www.pcgamingrace.com/products/glorious-gmmk-pro-75-barebone-white'>Glorious GMMK Pro</a></li>
@@ -42,7 +42,7 @@ export default function kit(){
             </ul>
             </div>
 
-            <div className='kitContainer'>
+            <div data-aos="flip-up" data-aos-duration="1500" className='kitContainer'>
             <h2>MOBILE</h2>
             <ul style={text}>
                 <li>Laptop: <a href='https://www.apple.com/macbook-air/'>2021 MacBook Air</a></li>
@@ -56,7 +56,7 @@ export default function kit(){
             </ul>
             </div>
 
-            <div className='kitContainer'>
+            <div data-aos="flip-up" data-aos-duration="1500" className='kitContainer'>
             <h2>IDE</h2>
             <ul style={text}>
                 <li>Editor: <a href='https://code.visualstudio.com/'>VSCode</a></li>
