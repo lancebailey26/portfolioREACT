@@ -1,6 +1,6 @@
 
 import {useState, useEffect} from 'react'
-import { Navbar, Nav, NavDropdown, Container} from 'react-bootstrap';
+import { Navbar, Nav, Container} from 'react-bootstrap';
 import axios from 'axios'
 export default function Navigation() {
     const styles = {
@@ -39,6 +39,7 @@ export default function Navigation() {
             <Nav className="me-auto">
               <Nav.Link href="/blog">BLOG</Nav.Link>
               <Nav.Link href="/portfolio">PORTFOLIO</Nav.Link>
+              <Nav.Link href="/kit">KIT</Nav.Link>
             </Nav>
             <Navbar.Brand style={right}>{quote}
             <br/>

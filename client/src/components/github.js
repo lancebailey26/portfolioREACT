@@ -2,36 +2,45 @@ import Card from './cards'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import CardGroup from 'react-bootstrap/CardGroup';
+import cert from '../assets/cert.pdf'
+import resume from '../assets/resume.pdf'
 
-export default function Github(){
+export default function Github() {
     const styles = {
         textAlign: 'center',
-        fontFamily:'Lora', 
+        fontFamily:'josefin',
+        color: '#BFA2DB',
+    }
+    const gray = {
+        backgroundColor: '#7F7C82'
+    }
+    const header = {
+        float:'right'
+    }
+    const red ={
+        color: 'red'
+    }
+    const fullStack = {
+        float: 'right',
+        color: '#BFA2DB',
+        fontWeight: 'bold'
+    }
+    const yellow = {
+        color: 'yellow'
+    }
+    const blue = {
+        color: '#3776ab'
+    }
+    const orange = {
+        color: 'orange'
     }
     const [first, setFirst] = useState([{}]);
-   // const [firstDesc, setFirstDesc] = useState({});
     const [second, setSecond] = useState({});
-   // const [secondDesc, setSecondDesc] = useState({});
     const [third, setThird] = useState({});
-   // const [thirdDesc, setThirdDesc] = useState({});
     const [four, setFour] = useState({});
-   // const [fourDesc, setFourDesc] = useState({});
     const [isLoading, setLoading] = useState(true);
-   // const [descLoad, setDescLoad] = useState(true);
-    // const getDesc = async () => {
-    //     const req = await axios.get('https://gh-pinned-repos-5l2i19um3.vercel.app/?username=lancebailey26/');
-    //     const first = req.data[0].description;
-    //     const second = req.data[1].description;
-    //     const third = req.data[2].description;
-    //     const four = req.data[3].description;
-    //     setFirstDesc(first)
-    //     setSecondDesc(second)
-    //     setThirdDesc(third)
-    //     setFourDesc(four)
-    //     setDescLoad(false)
-        
-    // }
-    const getData = async () =>  {
+
+    const getData = async () => {
         const req = await axios.get('https://gh-pinned-repos.egoist.sh/?username=lancebailey26');
         const first = req.data[0];
         const second = req.data[1];
@@ -42,34 +51,62 @@ export default function Github(){
         setSecond(second);
         setThird(third);
         setFour(four);
-        
+
     }
     useEffect(() => {
         getData();
-        // getDesc();
+
     }, []);
-   
-    
-    // if (descLoad) {
-    //     return <div className="loading center"><h1>Loading...</h1></div>;
-    // }
+
+
     if (isLoading) {
-        return <div className="github"><p style={styles}>Loading...</p></div>;
-      }
-      
-    return(
-        <>
-        <div className='github'>
-        <p style={styles}>Here are some of my favorite github projects:</p>
-        <CardGroup>
-        <Card title={first.repo} language={first.language} link={first.link} color={first.languageColor} image={first.image} />
-        <Card title={second.repo} language={second.language} link={second.link} color={second.languageColor} image={second.image} />
-        <Card title={third.repo} language={third.language} link={third.link} color={third.languageColor} image={third.image} />
-        <Card title={four.repo} language={four.language} link={four.link} color={four.languageColor}image={four.image}/>
-        </CardGroup>
-        
-        </div>
+        return (
+            <>
+            <div data-aos='fade-right' data-aos-duration="1500" className='header'>
+            <h1>PORTFOLIO</h1>
+            <p style={fullStack}> what i'm working on </p> 
+            </div>
+        <div className="github"><p style={styles}>Loading...</p></div>;
         </>
+        )
+    }
+
+    return (
+        <>
+        <div data-aos='fade-right' data-aos-duration="1500" className='header'>
+            <h1>PORTFOLIO</h1>
+            <p style={fullStack}> what i'm working on </p> 
+        </div>
+        <div className='container'>
+            <div className='contentContainer'>
+                <div style={gray} className='technologies box' data-aos='flip-up' data-aos-duration="1500">
+                <p style={styles}>Toolbelt</p>
+                <ul>
+                <li data-aos="fade-right" style={yellow}>JavaScript</li>
+                <li data-aos="fade-left" style={blue}>React</li>
+                <li data-aos="fade-left" style={yellow}>jQuery</li>
+                <li data-aos="fade-left"style={red}>MySQL</li>
+                <li data-aos="fade-right" style={red}>MongoDB</li>
+                <li data-aos="fade-right"style={blue}>Python</li>
+                <li data-aos="fade-left" style={orange}>AWS</li>
+            </ul>
+                </div>
+                <div className='defnottech box' data-aos='flip-up' data-aos-duration="1500">
+                <p style={styles}><a href={cert} target = "_blank">OSU Certification</a></p>
+                <p style={styles}><a href={resume} target = "_blank">Resume</a></p>
+                </div>
+            </div>
+       </div>
+            <div className='github box'  data-aos='fade-left' data-aos-duration="1500" >
+            <p style={styles}>Here are some of my favorite github projects:</p>
+                <CardGroup>
+                    <Card title={first.repo} language={first.language} link={first.link} color={first.languageColor} image={first.image} />
+                    <Card title={second.repo} language={second.language} link={second.link} color={second.languageColor} image={second.image} />
+                    <Card title={third.repo} language={third.language} link={third.link} color={third.languageColor} image={third.image} />
+                    <Card title={four.repo} language={four.language} link={four.link} color={four.languageColor} image={four.image} />
+                </CardGroup>
+            </div>
+            </>
     )
-    
+
 }
