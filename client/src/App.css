@@ -211,6 +211,29 @@ p{
   margin: auto;
   font-family: 'Lora', serif;
 }
+.kitContainer{
+  padding: 1rem 1rem;
+    border: 5px solid var(--purple);
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px  var(--pastelpurple);
+    margin-bottom: 1rem;
+    
+}
+.kit{
+  padding: 1rem;
+
+}
+.kitContainer h2{
+  font-family: 'lemonmilk';
+}
+.kitContainer a{
+  color: var(--pastelpurple)
+}
+.sub{
+  text-align: left;
+  font-size: 12px;
+  font-style: italic;
+}
 }
 
 /*desktop*/
@@ -406,5 +429,28 @@ p{
 .card{
   margin-right: 1rem;
   margin-bottom: 1rem;
+}
+.kitContainer{
+  padding: 1rem 1rem 2rem 2rem;
+    border: 5px solid var(--purple);
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px  var(--pastelpurple);
+    margin-bottom: 1rem;
+    
+}
+.kit{
+  padding: 1rem;
+
+}
+.kitContainer h2{
+  font-family: 'lemonmilk';
+}
+.kitContainer a{
+  color: var(--pastelpurple)
+}
+.sub{
+  text-align: left;
+  font-size: 23px;
+  font-style: italic;
 }
 }

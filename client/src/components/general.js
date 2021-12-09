@@ -21,6 +21,13 @@ const twitch =
       color: 'inherit',
       textDecoration: 'none'
   }
+  const lemonmilk = {
+    fontFamily: 'lemonmilk'
+  }
+  const flair ={
+    fontSize: '14px',
+  }
+  
   return (
     <div className="content">
       <div className="contentContainer">
@@ -118,7 +125,14 @@ const twitch =
           </ul>
         </div>
         <div data-aos="flip-up" data-aos-duration="1500" className='box'>
-            <p> WRITE SOMETHING COOL ABOUT YOURSELF </p>
+            <h3 style={lemonmilk}> Lance (Noun): </h3>
+            <br/>
+            <p>A Midwest developer with a knack for making functional apps. *</p>
+            <br/>
+            <br/>
+            <br/>
+            <p style={flair}></p>
+            <p style={flair}>* Rolex wearing, diamond ring wearing, limousine riding, jet flying, kiss stealing, wheeling dealing son of a gun.</p>
         </div>
       </div>
     </div>
