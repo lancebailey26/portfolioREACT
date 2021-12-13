@@ -1,3 +1,6 @@
 const Blogs = require('./blogs');
+const Tags = require('./tags')
 
-module.exports = Blogs
+//Tags belongs to a Blog
+
+module.exports = {Blogs, Tags}
