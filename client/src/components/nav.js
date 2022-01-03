@@ -24,7 +24,7 @@ export default function Navigation() {
         getQuote()
     },[])
     const getQuote = async () => {
-        const req = await axios.get('https://api.quotable.io/random?maxLength=100')
+        const req = await axios.get('https://api.quotable.io/random?maxLength=60')
         const author = req.data.author;
         const quote = req.data.content
         setAuthor(author)
