@@ -8,5 +8,4 @@ router.use('/api', blogRoutes)
 router.use((req, res) => {
   res.sendFile(path.join(__dirname, '../../client/build/index.html'));
 });
-//test
 module.exports = router;
