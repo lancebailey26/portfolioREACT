@@ -32,7 +32,7 @@ export default function Routers(){
                     <Kit/>
                     </Route>
                 </Switch>
-                <Contact/>
+                {/* <Contact/> */}
             </Router>
             
         </main>

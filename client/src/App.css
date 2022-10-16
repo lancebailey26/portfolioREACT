@@ -16,6 +16,9 @@
   --pastelpurple: #BFA2DB;
   --pastelgray: #7F7C82;
 }
+main{
+  min-height: 100vh;
+}
 @font-face {
   font-family: 'lemonmilk';
   src: url(./assets/LemonMilkMedium-mLZYV.otf);
@@ -24,6 +27,15 @@
   font-family: 'josefin';
   src: url(./assets/JosefinSansRegular-x3LYV.ttf);
 }
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
 /*mobile*/
 @media only screen and (max-width: 992px) {
   .nav {
