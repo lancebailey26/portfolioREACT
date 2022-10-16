@@ -19,6 +19,9 @@
 main{
   min-height: 100vh;
 }
+.hidden{
+  display:none
+}
 @font-face {
   font-family: 'lemonmilk';
   src: url(./assets/LemonMilkMedium-mLZYV.otf);

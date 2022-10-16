@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
+const moment = require('moment')
 
 export default function Blog() {
     const fullStack = {
@@ -31,6 +32,7 @@ export default function Blog() {
 
     const goBack = async () => {
         const newValue = index - 1;
+        console.log(newValue)
         if(newValue >= 0) {
             getBlogData(bloglist[newValue])
             setIndex(newValue)
@@ -38,6 +40,7 @@ export default function Blog() {
     }
     const goForward = async () => {
         const newValue = index + 1;
+        console.log(newValue)
         if(newValue <= totalBlogs - 1) {
             getBlogData(bloglist[newValue])
             setIndex(newValue)
@@ -52,9 +55,10 @@ export default function Blog() {
 
         <div className='blog'>
             <button id='forward' onClick={goForward}> Next</button>
-            <button id='backward' onClick={goBack}> Back </button>
+            <button id='backward'  onClick={goBack}> Back </button>
            <div data-aos="flip-up" data-aos-duration="1500" className='blogContent'>
             <h2 style={milk}>{currentBlog.title}</h2>
+            <h3 style={milk}>{moment(currentBlog.date).format('MM-DD-YYYY')}</h3>
             <div dangerouslySetInnerHTML={{ __html: currentBlog.blog }}></div>
             </div>
         </div>
