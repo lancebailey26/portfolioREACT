@@ -37,7 +37,7 @@ blogRoutes.route("/blogs/:id").get(function (req, res) {
 });
  
 // This section will help you create a new blog.
-blogRoutes.route("/blogs/add").post(function (req, response) {
+blogRoutes.route("/blogs/add/top-secret/1000362").post(function (req, response) {
  let db_connect = dbo.getDb();
  let myobj = {
    title: req.body.title,
