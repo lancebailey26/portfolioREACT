@@ -4,8 +4,11 @@
 
 My ever evolving website that will serve as a place for me to showcase my knowledge and work, along with posting blogs.
 
+-- Last Updated in Github 10/15/2022
+-- Last pushed to production ??? ago
+
 ## Technologies
-* MySQL
+* MongoDB
 * Express
 * React
 * Node
@@ -14,4 +17,4 @@ My ever evolving website that will serve as a place for me to showcase my knowle
 
 ![Screenshot](./client/src/assets/portfolio.png)
 
-## Copyright Lance Bailey 11/15/2021 License: GNU GPLv3
+## Copyright Lance Bailey License: GNU GPLv3
