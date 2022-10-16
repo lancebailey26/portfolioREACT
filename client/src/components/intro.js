@@ -1,7 +1,4 @@
 export default function intro(){
-    const styles = {
-        float:'right'
-    }
     const fullStack = {
         float: 'right',
         color: '#BFA2DB',

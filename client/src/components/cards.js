@@ -5,9 +5,6 @@ export default function card(props) {
   const lang = {
     color: props.color
   }
-  const card = {
-    textAlign: 'center'
-  }
   return (
 
     <Card>

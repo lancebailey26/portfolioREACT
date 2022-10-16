@@ -14,9 +14,6 @@ export default function Github() {
     const gray = {
         backgroundColor: '#7F7C82'
     }
-    const header = {
-        float:'right'
-    }
     const red ={
         color: 'red'
     }
@@ -92,8 +89,8 @@ export default function Github() {
             </ul>
                 </div>
                 <div className='defnottech box' data-aos='flip-up' data-aos-duration="1500">
-                <p style={styles}><a href={cert} target = "_blank">OSU Certification</a></p>
-                <p style={styles}><a href={resume} target = "_blank">Resume</a></p>
+                <p style={styles}><a href={cert} target = "_blank" rel="noreferrer">OSU Certification</a></p>
+                <p style={styles}><a href={resume} target = "_blank" rel="noreferrer">Resume</a></p>
                 </div>
             </div>
        </div>
