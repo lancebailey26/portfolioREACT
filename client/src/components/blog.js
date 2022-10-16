@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-const nl2br = require('nl2br');
 
 export default function Blog() {
     const fullStack = {
