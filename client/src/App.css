@@ -55,6 +55,10 @@ main{
   .social-nav-burger{
     display: block
   }
+  .nav-ham{
+    display: flex;
+    justify-content: space-around;
+  }
 .footer {
   display: block;
   bottom: 0px;
@@ -123,6 +127,7 @@ p{
   border: 5px solid var(--purple);
   border-radius: 10px;
   box-shadow: 10px 5px 5px  var(--pastelpurple);
+  height:100%
 }
 .technologies{
   border: 5px solid var(--purple);
@@ -257,7 +262,7 @@ p{
 }
 
 /*desktop*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 993px) {
   body{
     background-color: var(--cream);
   }
@@ -274,6 +279,10 @@ p{
   }
   .social-nav-burger {
     display: none;
+  }
+  .nav-ham{
+    display: flex;
+    justify-content: space-around;
   }
   .navbar-light .navbar-brand{
     color:var(--pastelgray)

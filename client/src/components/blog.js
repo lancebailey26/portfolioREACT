@@ -1,4 +1,4 @@
-import axios from 'axios';
+// import axios from 'axios';
 import { useState, useEffect } from 'react';
 const moment = require('moment')
 
@@ -17,7 +17,6 @@ export default function Blog() {
     const [currentBlog, getBlogData] = useState([])
     const [index, setIndex] = useState(0)
     const [totalBlogs, setTotalBlogs] = useState(0);
-    const [original, setOriginal] = useState([])
     useEffect(() => {
         getBlogList()
     }, [])
