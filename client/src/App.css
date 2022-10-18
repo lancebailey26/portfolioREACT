@@ -49,7 +49,12 @@ main{
     z-index: 2;
     overflow: auto;
   }
-  
+  .social-nav {
+    display: none
+  }
+  .social-nav-burger{
+    display: block
+  }
 .footer {
   display: block;
   bottom: 0px;
@@ -113,12 +118,11 @@ p{
   font-family: 'josefin';
 }
 .box {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  width:100%;
   padding: 1rem;
-    border: 5px solid var(--purple);
-    border-radius: 10px;
-    box-shadow: 10px 5px 5px  var(--pastelpurple);
+  border: 5px solid var(--purple);
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px  var(--pastelpurple);
 }
 .technologies{
   border: 5px solid var(--purple);
@@ -268,6 +272,9 @@ p{
   .navItem{
     color: white
   }
+  .social-nav-burger {
+    display: none;
+  }
   .navbar-light .navbar-brand{
     color:var(--pastelgray)
   }
@@ -306,8 +313,7 @@ p{
     margin-bottom: 1rem;
   }
   .box {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    width:100%;
     padding: 1rem;
     border: 5px solid var(--purple);
     border-radius: 10px;
