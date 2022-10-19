@@ -15,17 +15,17 @@ export default function Routers(){
                 <Switch>
                     <Route exact path="/">
                         <Intro />
-                        <General/>
-                        
+                        {/* <General/> */}
+                        <Github/>
                     </Route>
                     <Route exact path="/blog">
                         <Blog/>
                         
                     </Route>
-                    <Route exact path="/portfolio">
+                    {/* <Route exact path="/portfolio">
                     <Github/>
                  
-                    </Route>
+                    </Route> */}
                     <Route exact path='/kit'>
                     <Kit/>
                     </Route>

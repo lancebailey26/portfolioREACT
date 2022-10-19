@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react'
 import CardGroup from 'react-bootstrap/CardGroup';
 import cert from '../assets/cert.pdf'
 import resume from '../assets/resume.pdf'
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
 
 export default function Github() {
     const styles = {
@@ -30,6 +32,14 @@ export default function Github() {
     }
     const orange = {
         color: 'orange'
+    }
+    const tabs = {
+        marginBottom: '50px'
+    }
+    const tabContent = {
+        margin: 'auto',
+        width: '75%',
+        textAlign: 'center'
     }
     const [first, setFirst] = useState([{}]);
     const [second, setSecond] = useState({});
@@ -70,11 +80,11 @@ export default function Github() {
 
     return (
         <>
-        <div data-aos='fade-right' data-aos-duration="1500" className='header'>
+        {/* <div data-aos='fade-right' data-aos-duration="1500" className='header'>
             <h1>PORTFOLIO</h1>
             <p style={fullStack}> what i'm working on </p> 
-        </div>
-        <div className='container'>
+        </div> */}
+        {/* <div className='container'>
             <div className='contentContainer'>
                 <div style={gray} className='technologies box' data-aos='flip-up' data-aos-duration="1500">
                 <p style={styles}>Toolbelt</p>
@@ -93,10 +103,42 @@ export default function Github() {
                 <p style={styles}><a href={resume} target = "_blank" rel="noreferrer">Resume</a></p>
                 </div>
             </div>
-       </div>
+       </div> */}
       
+{/* 
             <div className='github box'  data-aos='fade-left' data-aos-duration="1500" >
-            <p style={styles}>Here are some of my favorite github projects:</p>
+          <p style={styles}> My toolbelt is an ever-expanding bottomless pit of knowledge. </p>
+          <p style={styles}>    My personal favorites are React and general JavaScript. </p>
+          
+           <p style={styles}> This website is built in hook based React. </p>
+       </div> */}
+
+       <div className='github box' >
+            <p style={styles}>After spending the formative years of my adult life working in the construction industry, I decided to make the jump to Web Development. <br/>
+            I'm currently more focused on Front-End development, making useful and intuitive interfaces and apps.</p>
+            <p style={styles}>Here's some technologies that I'm familiar/working with:</p>
+            <div className='tabs' style={tabs}>
+            <Tabs fill className="mb-3">
+                <Tab eventKey='meteor' title='Meteor.js'>
+                    <div className='tab-content' style={tabContent}>
+                        <p>some stuff about meteor?</p> 
+                    </div>
+                </Tab>
+                <Tab eventKey='react' title='React'>
+                    <div className='tab-content' style={tabContent}>
+                        <p>some stuff about react?</p> 
+                    </div>                
+                </Tab>
+                <Tab eventKey='mongo' title='MongoDB'>
+                <div className='tab-content' style={tabContent}>
+                        <p>some stuff about mongodb?</p> 
+                    </div>                </Tab>
+                <Tab eventKey='jquery' title='JQuery'>
+                <div className='tab-content' style={tabContent}>
+                        <p>some stuff about jquery?</p> 
+                    </div>                </Tab>
+            </Tabs>
+            </div>
                 <CardGroup>
                     <Card title={first.repo} language={first.language} link={first.link} color={first.languageColor} image={first.image} />
                     <Card title={second.repo} language={second.language} link={second.link} color={second.languageColor} image={second.image} />
@@ -104,12 +146,6 @@ export default function Github() {
                     <Card title={four.repo} language={four.language} link={four.link} color={four.languageColor} image={four.image} />
                 </CardGroup>
             </div>
-            <div className='github box'  data-aos='fade-left' data-aos-duration="1500" >
-          <p style={styles}> My toolbelt is an ever-expanding bottomless pit of knowledge. </p>
-          <p style={styles}>    My personal favorites are React and general JavaScript. </p>
-          
-           <p style={styles}> This website is built in hook based React. </p>
-       </div>
             </>
     )
 

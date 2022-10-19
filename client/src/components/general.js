@@ -34,15 +34,7 @@ const twitch =
   return (
     <div className="content">
       <div className="contentContainer">
-        <div data-aos="flip-up" data-aos-duration="1500" className='box'>
-            <h3 style={lemonmilk}> Lance (Noun): </h3>
-            <br/> <p style={flair}> <a style={spot} href='mailto:lancebailey222@gmail.com'>lancebailey222@gmail.com </a></p>
-            <p>A Midwest developer with a knack for making functional apps. *</p>
-            <br/>
-            <br/>
-            <br/>
-            <p style={flair}></p>
-            <p style={flair}>* Rolex wearing, diamond ring wearing, limousine riding, jet flying, kiss stealing, wheeling dealing son of a gun.</p>
+        <div className='box'>
         </div>
       </div>
     </div>
