@@ -5,14 +5,21 @@ const moment = require('moment')
 export default function Blog() {
     const fullStack = {
         float: 'right',
-        color: '#BFA2DB',
+        color: '#d8bfd4',
         fontWeight: 'bold'
     }
 
     const milk ={
-        fontFamily: 'lemonmilk'
+        fontFamily: 'lemonmilk',
+        color: '#31485c'
     }
-
+    const blueGray = {
+        color: '#31485c'
+    }
+    const button = {
+        color: '#31485c',
+        border: 'none'
+    }
     const [bloglist, updateBlogList] = useState([])
     const [currentBlog, getBlogData] = useState([])
     const [index, setIndex] = useState(0)
@@ -48,17 +55,17 @@ export default function Blog() {
 
     return (<>
         <div data-aos='fade-right' data-aos-duration="1500" className='header'>
-        <h1>BLOG</h1>
+        <h1 style={blueGray}>BLOG</h1>
         <p style={fullStack}> where i write about tech and life </p> 
         </div>
 
         <div className='blog'>
-            <button id='forward' onClick={goForward}> Next</button>
-            <button id='backward'  onClick={goBack}> Back </button>
-           <div data-aos="flip-up" data-aos-duration="1500" className='blogContent'>
+            <button id='forward'  style={button} onClick={goForward}> Next</button>
+            <button id='backward'  style={button} onClick={goBack}> Back </button>
+           <div className='blogContent'>
             <h2 style={milk}>{currentBlog.title}</h2>
             <h3 style={milk}>{moment(currentBlog.date).format('MM-DD-YYYY')}</h3>
-            <div dangerouslySetInnerHTML={{ __html: currentBlog.blog }}></div>
+            <div style={blueGray} dangerouslySetInnerHTML={{ __html: currentBlog.blog }}></div>
             </div>
         </div>
         </>

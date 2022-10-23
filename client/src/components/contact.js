@@ -13,26 +13,26 @@ export default function contact() {
     return (
         <div className='footer'>
            <div className='footcontain'>
-            <a href='https://www.github.com/lancebailey26'><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#7F7C82" className="bi bi-github" viewBox="0 0 16 16">
+            <a href='https://www.github.com/lancebailey26'><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#31485c" className="bi bi-github" viewBox="0 0 16 16">
                 <path d={github} />
             </svg></a>
             
-            <a href='https://www.linkedin.com/in/lance-bailey/'><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#7F7C82" className="bi bi-github" viewBox="0 0 16 16">
+            <a href='https://www.linkedin.com/in/lance-bailey/'><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#31485c" className="bi bi-github" viewBox="0 0 16 16">
                 <path d={linkedin} />
             </svg></a>
 
-            <a href='https://www.twitter.com/lancebailey26'><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#7F7C82" className="bi bi-github" viewBox="0 0 16 16">
+            <a href='https://www.twitter.com/lancebailey26'><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#31485c" className="bi bi-github" viewBox="0 0 16 16">
                 <path d={twitter} />
             </svg></a>
 
-            <a href='https://www.instagram.com/lancebailey'><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#7F7C82" className="bi bi-github" viewBox="0 0 16 16">
+            <a href='https://www.instagram.com/lancebailey'><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#31485c" className="bi bi-github" viewBox="0 0 16 16">
                 <path d={instagram} />
             </svg></a>
-            <a href='https://www.twitch.tv/skydweller3k'><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#7F7C82" class="bi bi-twitch" viewBox="0 0 16 16">
+            <a href='https://www.twitch.tv/skydweller3k'><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#31485c" class="bi bi-twitch" viewBox="0 0 16 16">
   <path d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z"/>
   <path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z"/>
 </svg></a>
-            <a href='mailto:lancebailey222@gmail.com'><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#7F7C82" className="bi bi-github" viewBox="0 0 16 16">
+            <a href='mailto:lancebailey222@gmail.com'><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#31485c" className="bi bi-github" viewBox="0 0 16 16">
                 <path d={mail} />
             </svg></a>
             </div>

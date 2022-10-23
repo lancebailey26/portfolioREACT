@@ -50,13 +50,11 @@ main{
   padding-bottom: 2.5rem;    /* Footer height */
   background-color:var(--cream)
 }
-.tabs{
-  margin-bottom: 10rem
-}
+
 /*mobile*/
 @media only screen and (max-width: 992px) {
   .nav {
-    background-color: var(--cream);
+    background-color: var(--fujipink);
     font-size: 32px;
     color:var(--fujigray);
     font-family: 'lemonmilk';
@@ -282,7 +280,7 @@ p{
   }
   
   .nav {
-    background-color: var(--cream);
+    background-color: var(--fujipink);
     font-size: 32px;
     color:var(--fujigray);
     font-family: 'lemonmilk';
