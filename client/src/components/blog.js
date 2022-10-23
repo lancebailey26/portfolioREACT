@@ -1,6 +1,6 @@
 // import axios from 'axios';
 import { useState, useEffect } from 'react';
-const moment = require('moment')
+import moment from 'moment'
 
 export default function Blog() {
     const fullStack = {
