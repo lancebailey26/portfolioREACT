@@ -50,7 +50,9 @@ main{
   padding-bottom: 2.5rem;    /* Footer height */
   background-color:var(--cream)
 }
-
+.tabs{
+  margin-bottom: 10rem
+}
 /*mobile*/
 @media only screen and (max-width: 992px) {
   .nav {

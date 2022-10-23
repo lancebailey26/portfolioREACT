@@ -34,11 +34,10 @@ export default function Github() {
         color: 'orange'
     }
     const tabs = {
-        marginBottom: '50px'
     }
     const tabContent = {
         margin: 'auto',
-        width: '75%',
+        width: '90%',
         textAlign: 'center'
     }
     const [first, setFirst] = useState([{}]);
@@ -72,8 +71,8 @@ export default function Github() {
             <div data-aos='fade-right' data-aos-duration="1500" className='header'>
             <h1>PORTFOLIO</h1>
             <p style={fullStack}> what i'm working on </p> 
+            <div className="github"><p style={styles}>Loading...</p></div>;
             </div>
-        <div className="github"><p style={styles}>Loading...</p></div>;
         </>
         )
     }
@@ -119,30 +118,37 @@ export default function Github() {
             <p style={styles}>Here's some technologies that I'm familiar/working with:</p>
             <div className='tabs' style={tabs}>
             <Tabs fill className="mb-3">
-                <Tab eventKey='meteor' title='Meteor.js'>
+                <Tab eventKey='meteor' title='MeteorJS'>
                     <div className='tab-content' style={tabContent}>
-                        <p>some stuff about meteor?</p> 
+                        <p>MeteorJS is my current "daily driver" framework.</p>
+                        <p>Built 100% in JavaScript for the Front and Back ends of development, making reactive, intuitive apps with Meteor is a real pleasure.</p>
+                        <p>Learn more: <a href='https://www.meteor.com/'>Meteor.JS</a></p>
                     </div>
                 </Tab>
                 <Tab eventKey='react' title='React'>
                     <div className='tab-content' style={tabContent}>
-                        <p>some stuff about react?</p> 
+                        <p>I cut my teeth in WebDev in the React framework.</p> 
+                        <p>This website is built in hook based React, which I find to be a real joy to work with.</p>
                     </div>                
                 </Tab>
                 <Tab eventKey='mongo' title='MongoDB'>
                 <div className='tab-content' style={tabContent}>
-                        <p>some stuff about mongodb?</p> 
-                    </div>                </Tab>
+                        <p>While I do have experience with MYSQL databases, I tend to prefer the freedoms and syntax of MongoDB.</p>
+                        <p>Working with a collection of 1.8 million records is much more fun in MongoDB.</p>
+                    </div>                
+                </Tab>
                 <Tab eventKey='jquery' title='JQuery'>
                 <div className='tab-content' style={tabContent}>
-                        <p>some stuff about jquery?</p> 
-                    </div>                </Tab>
+                        <p>We all love Jquery and we all hate Jquery at the same time.</p>
+                        <p>It's still my favorite way to get values of inputs.</p> 
+                    </div>                
+                </Tab>
             </Tabs>
             </div>
+                <h3 style={tabContent}>Here's some examples of projects in my Github:</h3>
                 <CardGroup>
                     <Card title={first.repo} language={first.language} link={first.link} color={first.languageColor} image={first.image} />
                     <Card title={second.repo} language={second.language} link={second.link} color={second.languageColor} image={second.image} />
-                    <Card title={third.repo} language={third.language} link={third.link} color={third.languageColor} image={third.image} />
                     <Card title={four.repo} language={four.language} link={four.link} color={four.languageColor} image={four.image} />
                 </CardGroup>
             </div>
