@@ -1,6 +1,6 @@
 // import axios from 'axios';
 import { useState, useEffect } from 'react';
-import moment from 'moment'
+import Moment from 'react-moment'
 
 export default function Blog() {
     const fullStack = {
@@ -64,7 +64,8 @@ export default function Blog() {
             <button id='backward'  style={button} onClick={goBack}> Back </button>
            <div className='blogContent'>
             <h2 style={milk}>{currentBlog.title}</h2>
-            <h3 style={milk}>{moment(currentBlog.date).format('MM-DD-YYYY')}</h3>
+            <h3 style={milk}><Moment format="MM/DD/YYYY">{currentBlog.date}</Moment></h3>
+
             <div style={blueGray} dangerouslySetInnerHTML={{ __html: currentBlog.blog }}></div>
             </div>
         </div>
