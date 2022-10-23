@@ -8,7 +8,7 @@
     "main": "server/server.js",
     "scripts": {
         "stall": "concurrently \"cd server && npm install\" \"cd client && npm install\" \"npm install\"",
-        "start": "cd server && node server.js",
+        "start":  "concurrently \"cd server && node server.js\" \"cd client && npm start\"",
         "develop": "concurrently \"cd server && node server.js\" \"cd client && npm start\"",
         "seed": "cd server && npm run seed",
         "build": "cd client && npm run build",
