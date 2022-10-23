@@ -15,6 +15,22 @@
   --periwinkle: #f0d9ff;
   --pastelpurple: #BFA2DB;
   --pastelgray: #7F7C82;
+  --fujigray: #7e95ab;
+  --fujipink: #d8bfd4;
+  --fujibluegray: #31485c;
+}
+main{
+  min-height: 100vh;
+  padding-top:1px
+}
+.hidden{
+  display:none
+}
+.nav-link{
+  color: var(--fujibluegray)
+}
+.social-nav-burger {
+  fill: #31485c
 }
 @font-face {
   font-family: 'lemonmilk';
@@ -24,17 +40,37 @@
   font-family: 'josefin';
   src: url(./assets/JosefinSansRegular-x3LYV.ttf);
 }
+#page-container {
+  position: relative;
+  min-height: 100vh;
+  background-color:var(--cream)
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+  background-color:var(--cream)
+}
+
 /*mobile*/
 @media only screen and (max-width: 992px) {
   .nav {
-    background-color: var(--pastelpurple);
+    background-color: var(--fujipink);
     font-size: 32px;
-    color:var(--pastelgray);
+    color:var(--fujigray);
     font-family: 'lemonmilk';
     z-index: 2;
     overflow: auto;
   }
-  
+  .social-nav {
+    display: none
+  }
+  .social-nav-burger{
+    display: block
+  }
+  .nav-ham{
+    display: flex;
+    justify-content: space-around;
+  }
 .footer {
   display: block;
   bottom: 0px;
@@ -42,13 +78,13 @@
   width: 100%;
   height:100%;
   margin: 1rem auto auto auto;
-  background-color: var(--pastelpurple);
+  background-color: var(--cream);
   font-size: 32px;
   text-align: center;
-  color:var(--pastelpurple);
+  color:var(--cream);
 }
 .blog button{
-  background-color: var(--pastelpurple);
+  background-color: var(--cream);
     font-size: 24px;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -98,17 +134,17 @@ p{
   font-family: 'josefin';
 }
 .box {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  width:100%;
   padding: 1rem;
-    border: 5px solid var(--purple);
-    border-radius: 10px;
-    box-shadow: 10px 5px 5px  var(--pastelpurple);
+  border: 5px solid var(--fujibluegray);
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px  var(--cream);
+  height:100%
 }
 .technologies{
-  border: 5px solid var(--purple);
+  border: 5px solid var(--fujibluegray);
   border-radius: 10px;
-  box-shadow: 10px 5px 5px  var(--pastelpurple);
+  box-shadow: 10px 5px 5px  var(--cream);
   padding-right: 1rem;
   margin-bottom: 1rem;
   order: 0;
@@ -132,15 +168,15 @@ p{
 }
 
 .nottech{
-  border: 5px solid var(--purple);
+  border: 5px solid var(--fujibluegray);
   border-radius: 10px;
-  box-shadow: 10px 5px 5px  var(--pastelpurple);
+  box-shadow: 10px 5px 5px  var(--cream);
   order: 1;
 }
 .defnottech{
-  border: 5px solid var(--purple);
+  border: 5px solid var(--fujibluegray);
   border-radius: 10px;
-  box-shadow: 10px 5px 5px  var(--pastelpurple);
+  box-shadow: 10px 5px 5px  var(--cream);
   order: 2;
 }
 .playlist{
@@ -152,7 +188,7 @@ p{
   background: rgba(0, 0, 0, 0.3)
 }
 .header{
-  width: 75%;
+  width: 80%;
   padding-top: 2rem;
   padding-bottom: 5rem;
   padding-right: 2rem;
@@ -161,9 +197,9 @@ p{
   margin-top: 7rem;
   font-family: 'lemonmilk';
   margin-bottom: 1rem;
-  border: 5px solid var(--purple);
+  border: 5px solid var(--fujibluegray);
   border-radius: 10px;
-  box-shadow: 10px 5px 5px  var(--pastelpurple);
+  box-shadow: 10px 5px 5px  var(--cream);
 }
 .blog{
   padding-top:7rem;
@@ -176,9 +212,9 @@ p{
 }
 .blogContent{
   margin-top: 1rem;
-  border: 5px solid var(--purple);
+  border: 5px solid var(--fujibluegray);
   border-radius: 10px;
-  box-shadow: 10px 5px 5px  var(--pastelpurple);
+  box-shadow: 10px 5px 5px  var(--cream);
   padding: 1rem
 }
 .blog{
@@ -214,9 +250,9 @@ p{
 }
 .kitContainer{
   padding: 1rem 1rem;
-    border: 5px solid var(--purple);
+    border: 5px solid var(--fujibluegray);
     border-radius: 10px;
-    box-shadow: 10px 5px 5px  var(--pastelpurple);
+    box-shadow: 10px 5px 5px  var(--cream);
     margin-bottom: 1rem;
     
 }
@@ -228,7 +264,7 @@ p{
   font-family: 'lemonmilk';
 }
 .kitContainer a{
-  color: var(--pastelpurple)
+  color: var(--cream)
 }
 .sub{
   text-align: left;
@@ -238,28 +274,35 @@ p{
 }
 
 /*desktop*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 993px) {
   body{
     background-color: var(--cream);
   }
   
   .nav {
-    background-color: var(--pastelpurple);
+    background-color: var(--fujipink);
     font-size: 32px;
-    color:var(--pastelgray);
+    color:var(--fujigray);
     font-family: 'lemonmilk';
     z-index: 2;
   }
   .navItem{
     color: white
   }
+  .social-nav-burger {
+    display: none;
+  }
+  .nav-ham{
+    display: flex;
+    justify-content: space-around;
+  }
   .navbar-light .navbar-brand{
-    color:var(--pastelgray)
+    color:var(--fujigray)
   }
   .blog button{
     /* border-radius: 10px; */
     /* color: var(--darkteal); */
-    background-color: var(--pastelpurple);
+    background-color: var(--cream);
     font-size: 24px;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -291,18 +334,17 @@ p{
     margin-bottom: 1rem;
   }
   .box {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    width:100%;
     padding: 1rem;
-    border: 5px solid var(--purple);
+    border: 5px solid var(--fujibluegray);
     border-radius: 10px;
-    box-shadow: 10px 5px 5px  var(--pastelpurple);
+    box-shadow: 10px 5px 5px  var(--cream);
     
   }
   .technologies{
-    border: 5px solid var(--purple);
+    border: 5px solid var(--fujibluegray);
     border-radius: 10px;
-    box-shadow: 10px 5px 5px  var(--pastelpurple);
+    box-shadow: 10px 5px 5px  var(--cream);
     padding-right: 1rem;
     order: 0;
   }
@@ -324,15 +366,15 @@ p{
     position: relative;
   }
   .nottech{
-    border: 5px solid var(--purple);
+    border: 5px solid var(--fujibluegray);
     border-radius: 10px;
-    box-shadow: 10px 5px 5px  var(--pastelpurple);
+    box-shadow: 10px 5px 5px  var(--cream);
     order: 1;
   }
   .defnottech{
-    border: 5px solid var(--purple);
+    border: 5px solid var(--fujibluegray);
     border-radius: 10px;
-    box-shadow: 10px 5px 5px  var(--pastelpurple);
+    box-shadow: 10px 5px 5px  var(--cream);
     order: 2;
   }
   .footer {
@@ -342,10 +384,10 @@ p{
     width: 100%;
     height:100%;
     margin: auto;
-    background-color: var(--pastelpurple);
+    background-color: var(--cream);
     font-size: 32px;
     text-align: center;
-    color:var(--pastelpurple);
+    color:var(--cream);
 }
 .footer a{
   padding: 5px;
@@ -387,9 +429,9 @@ p{
     margin-top: 7rem;
     font-family: 'lemonmilk';
     margin-bottom: 1rem;
-    border: 5px solid var(--purple);
+    border: 5px solid var(--fujibluegray);
     border-radius: 10px;
-    box-shadow: 10px 5px 5px  var(--pastelpurple);
+    box-shadow: 10px 5px 5px  var(--cream);
 }
 .blog{
   padding-top:1rem;
@@ -402,9 +444,9 @@ p{
 }
 .blogContent{
   margin-top: 1rem;
-  border: 5px solid var(--purple);
+  border: 5px solid var(--fujibluegray);
   border-radius: 10px;
-  box-shadow: 10px 5px 5px  var(--pastelpurple);
+  box-shadow: 10px 5px 5px  var(--cream);
   padding: 1rem
 }
 .blog h2{
@@ -434,9 +476,9 @@ p{
 }
 .kitContainer{
   padding: 1rem 1rem 2rem 2rem;
-    border: 5px solid var(--purple);
+    border: 5px solid var(--fujibluegray);
     border-radius: 10px;
-    box-shadow: 10px 5px 5px  var(--pastelpurple);
+    box-shadow: 10px 5px 5px  var(--cream);
     margin-bottom: 1rem;
     
 }
@@ -448,7 +490,7 @@ p{
   font-family: 'lemonmilk';
 }
 .kitContainer a{
-  color: var(--pastelpurple)
+  color: var(--cream)
 }
 .sub{
   text-align: left;
