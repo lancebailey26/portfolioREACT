@@ -1,6 +1,6 @@
 // import axios from 'axios';
 import { useState, useEffect } from 'react';
-import Moment from 'react-moment'
+import moment from 'moment'
 
 export default function Blog() {
     const fullStack = {
@@ -29,7 +29,7 @@ export default function Blog() {
     }, [])
 
     const getBlogList = async () => {
-        const bloglist = await fetch('http://lancebailey.tech/api/blogs/').then((response) => response.json()).then((responseData) => {return responseData;})
+        const bloglist = await fetch('https://www.lancebailey.tech/api/blogs/').then((response) => response.json()).then((responseData) => {return responseData;})
         updateBlogList(bloglist)
         getBlogData(bloglist[bloglist.length - 1])
         setIndex(bloglist.length)
@@ -62,7 +62,7 @@ export default function Blog() {
             <button id='backward'  style={button} onClick={goBack}> Back </button>
            <div className='blogContent'>
             <h2 style={milk}>{currentBlog.title}</h2>
-            <h3 style={milk}><Moment format="MM/DD/YYYY">{currentBlog.date}</Moment></h3>
+            <h3 style={milk}>{moment(currentBlog.date).format('MM-DD-YYYY')}</h3>
 
             <div style={blueGray} dangerouslySetInnerHTML={{ __html: currentBlog.blog }}></div>
             </div>
