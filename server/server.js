@@ -8,16 +8,18 @@ app.use(express.json());
 app.use(require('./routes'));
 // get driver connection
 const dbo = require('./db/connection');
+app.use(function(request, response, next) {
+
+	if (process.env.NODE_ENV != 'development' && !request.secure) {
+	  return response.redirect("https://" + request.headers.host + request.url);
+	}
+next();
+});
+app.use(express.urlencoded({ extended: true }));
 if (process.env.NODE_ENV === 'production') {
-	// Exprees will serve up production assets
-	app.use(express.static('client/build'));
-  
-	// Express serve up index.html file if it doesn't recognize route
-	const path = require('path');
-	app.get('*', (req, res) => {
-	  res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-	});
-  }
+app.use(express.static(path.join(__dirname, '../client/build')));
+}
+app.use(express.static(path.join(__dirname, 'public')));
 app.listen(port, () => {
 	// perform a database connection when server starts
 	dbo.connectToServer(function (err) {
