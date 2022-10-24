@@ -29,7 +29,7 @@ export default function Blog() {
     }, [])
 
     const getBlogList = async () => {
-        const bloglist = await fetch('http://localhost:5000/api/blogs/').then((response) => response.json()).then((responseData) => {return responseData;})
+        const bloglist = await fetch('http://lancebailey.tech/api/blogs/').then((response) => response.json()).then((responseData) => {return responseData;})
         updateBlogList(bloglist)
         getBlogData(bloglist[bloglist.length - 1])
         setIndex(bloglist.length)
@@ -38,7 +38,6 @@ export default function Blog() {
 
     const goBack = async () => {
         const newValue = index - 1;
-        console.log(newValue)
         if(newValue >= 0) {
             getBlogData(bloglist[newValue])
             setIndex(newValue)
@@ -46,7 +45,6 @@ export default function Blog() {
     }
     const goForward = async () => {
         const newValue = index + 1;
-        console.log(newValue)
         if(newValue <= totalBlogs - 1) {
             getBlogData(bloglist[newValue])
             setIndex(newValue)
