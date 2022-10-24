@@ -72,18 +72,15 @@ export default function Github() {
 
     if (isLoading) {
         return (
-            <>
             <div data-aos='fade-right' data-aos-duration="1500" className='header'>
             <h1 style={blueGray}>PORTFOLIO</h1>
             <p style={fullStack}> what i'm working on </p> 
             <div className="github"><p style={styles}>Loading...</p></div>;
             </div>
-        </>
         )
     }
 
     return (
-        <>
        <div className='github box' >
             <div style={section}>
             <p style={styles}>After spending the formative years of my adult life working in the construction industry, I decided to make the jump to Web Development. <br/>
@@ -137,7 +134,6 @@ export default function Github() {
                     <Card title={four.repo} language={four.language} link={four.link} color={four.languageColor} image={four.image} />
                 </CardGroup>
             </div>
-            </>
     )
 
 }
