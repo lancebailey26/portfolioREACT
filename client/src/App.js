@@ -8,9 +8,7 @@ AOS.init();
 
 function App() {
   return (
-   <>
-      <Routers/>
-    </>
+    <Routers/>
   );
 }
 
