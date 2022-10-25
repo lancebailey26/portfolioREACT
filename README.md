@@ -2,13 +2,13 @@
 
 My ever evolving website that will serve as a place for me to showcase my knowledge and work, along with posting blogs.
 
-#### -- Last Updated in Github 10/15/2022
-#### -- Last pushed to production ??? ago
+#### -- Last Updated in Github 10/24/2022
+#### -- Last pushed to production 10/24/2022
 
-## Known Issues
-* Blogs not loading - blog database is currently down because it's being migrated to mongodb.
-* too much animation/AoS
-* general layout/css tweaks needed
+## Latest Updates 10/24
+* Convert blog DB to MongoDB
+* Overhaul to design/CSS
+* Some code formatting
 
 ## Technologies
 * MongoDB
