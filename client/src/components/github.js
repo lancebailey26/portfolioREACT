@@ -49,7 +49,7 @@ export default function Github() {
     const [second, setSecond] = useState({});
     const [third, setThird] = useState({});
     const [four, setFour] = useState({});
-    const [isLoading, setLoading] = useState(true);
+    const [isLoading, setLoading] = useState(false);
 
     const getData = async () => {
         const req = await axios.get('https://gh-pinned-repos.egoist.sh/?username=lancebailey26');
