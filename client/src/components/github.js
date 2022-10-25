@@ -65,7 +65,7 @@ export default function Github() {
 
     }
     useEffect(() => {
-        getData();
+        // getData();
 
     }, []);
 
@@ -127,12 +127,12 @@ export default function Github() {
             </Tabs>
             </div>
             </div>
-                <h3 style={tabContent}>Here's some examples of projects in my Github:</h3>
+                {/* <h3 style={tabContent}>Here's some examples of projects in my Github:</h3>
                 <CardGroup>
                     <Card title={first.repo} language={first.language} link={first.link} color={first.languageColor} image={first.image} />
                     <Card title={second.repo} language={second.language} link={second.link} color={second.languageColor} image={second.image} />
                     <Card title={four.repo} language={four.language} link={four.link} color={four.languageColor} image={four.image} />
-                </CardGroup>
+                </CardGroup> */}
             </div>
     )
 
