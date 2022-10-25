@@ -10,6 +10,9 @@ My ever evolving website that will serve as a place for me to showcase my knowle
 * Overhaul to design/CSS
 * Some code formatting
 
+## Long Term Goals
+* Add more of my personality, probably best accomplished through blogs.
+
 ## Technologies
 * MongoDB
 * Express
