@@ -87,7 +87,7 @@ export default function Github() {
       <div style={section}>
         <p style={styles}>
           After spending the formative years of my adult life working in the
-          construction industry, I decided to make the jump to Web Development.{" "}
+          construction industry, I decided to make the jump to Web Development.
           <br />
           I'm currently more focused on Front-End development, making useful and
           intuitive interfaces and apps.
@@ -95,7 +95,7 @@ export default function Github() {
       </div>
       <div style={section}>
         <p style={styles}>
-          {" "}
+          
           Here's some relevant documents that you probably came here to see
         </p>
         <div style={infoResume}>
@@ -126,7 +126,7 @@ export default function Github() {
                   real pleasure.
                 </p>
                 <p>
-                  Learn more:{" "}
+                  Learn more:
                   <a style={fujiPink} href="https://www.meteor.com/">
                     Meteor.JS
                   </a>

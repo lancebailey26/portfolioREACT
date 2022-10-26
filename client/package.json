@@ -29,7 +29,7 @@
     "deploy": "gh-pages -b main -d build",
     "eject": "react-scripts eject"
   },
-  "proxy": "localhost:3001",
+  "proxy": "https://localhost:3001",
   "browserslist": {
     "production": [
       ">0.2%",

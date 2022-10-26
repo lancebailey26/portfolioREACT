@@ -36,7 +36,7 @@ export default function Blog() {
       });
     updateBlogList(bloglist);
     getBlogData(bloglist[bloglist.length - 1]);
-    setIndex(bloglist.length);
+    setIndex(bloglist.length - 1);
     setTotalBlogs(bloglist.length);
   };
 
@@ -63,13 +63,11 @@ export default function Blog() {
       </div>
 
       <div className="blog">
-        <button id="forward" style={button} onClick={goForward}>
-          {" "}
+        <button id="forward" className={index === totalBlogs - 1 ? 'hidden' : ''} style={button} onClick={goForward}>
           Next
         </button>
-        <button id="backward" style={button} onClick={goBack}>
-          {" "}
-          Back{" "}
+        <button id="backward" className={index === 0 ? 'hidden' : ''} style={button} onClick={goBack}>
+          Previous
         </button>
         <div className="blogContent">
           <h2 style={milk}>{currentBlog.title}</h2>

@@ -25,7 +25,7 @@ export default function kit() {
           <h2>DESKTOP</h2>
           <ul style={text}>
             <li>
-              Keyboard:{" "}
+              Keyboard:
               <a
                 style={fujiPink}
                 href="https://www.pcgamingrace.com/products/glorious-gmmk-pro-75-barebone-white"
@@ -40,7 +40,7 @@ export default function kit() {
               </li>
             </ul>
             <li>
-              Mouse:{" "}
+              Mouse:
               <a
                 style={fujiPink}
                 href="https://www.amazon.com/Corsair-Scimitar-Gaming-Backlit-Optical/dp/B082LRMY53?th=1"
@@ -52,7 +52,7 @@ export default function kit() {
               <li className="sub">as reliable as it is versatile.</li>
             </ul>
             <li>
-              Microphone:{" "}
+              Microphone:
               <a
                 style={fujiPink}
                 href="https://www.amazon.com/Blue-Yeti-USB-Microphone-Silver/dp/B00N1YPXW2?th=1"
@@ -64,7 +64,7 @@ export default function kit() {
               </ul>
             </li>
             <li>
-              Headphones:{" "}
+              Headphones:
               <a
                 style={fujiPink}
                 href="https://www.amazon.com/beyerdynamic-1990-Pro-Black-Dt1990/dp/B01KM9EJ7I/"
@@ -85,7 +85,7 @@ export default function kit() {
           <h2>MOBILE</h2>
           <ul style={text}>
             <li>
-              Laptop:{" "}
+              Laptop:
               <a style={fujiPink} href="https://www.apple.com/macbook-air/">
                 2021 MacBook Air
               </a>
@@ -96,7 +96,7 @@ export default function kit() {
               </li>
             </ul>
             <li>
-              Headphones:{" "}
+              Headphones:
               <a style={fujiPink} href="https://www.apple.com/airpods-pro/">
                 Airpod Pros
               </a>
@@ -114,7 +114,7 @@ export default function kit() {
           <h2>IDE</h2>
           <ul style={text}>
             <li>
-              Editor:{" "}
+              Editor:
               <a style={fujiPink} href="https://code.visualstudio.com/">
                 VSCode
               </a>
@@ -123,7 +123,7 @@ export default function kit() {
               <li className="sub">the gold standard.</li>
             </ul>
             <li>
-              Theme:{" "}
+              Theme:
               <a
                 style={fujiPink}
                 href="https://vscodethemes.com/e/RobbOwen.synthwave-vscode"
