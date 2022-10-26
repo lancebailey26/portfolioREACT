@@ -8,9 +8,11 @@ My ever evolving website that will serve as a place for me to showcase my knowle
 ## Latest Updates 10/26
 * Conditionally render blog previous/next buttons
 * I'm tired of hiding blog routes
+* Cleaned up a couple things (gitignore, etc)
 
 ## Long Term Goals
 * Add more of my personality, probably best accomplished through blogs.
+* Clean up code + further innovate on style and features.
 
 ## Technologies
 * MongoDB
