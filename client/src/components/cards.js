@@ -1,8 +1,9 @@
-import { Card } from "react-bootstrap";
+/* eslint-disable react/react-in-jsx-scope */
 
-export default function card(props) {
+import { Card } from 'react-bootstrap';
+export default function card (props) {
   const lang = {
-    color: props.color,
+    color: props.color
   };
   return (
     <Card>

@@ -1,18 +1,21 @@
-export default function kit() {
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/react-in-jsx-scope */
+
+export default function kit () {
   const fullStack = {
-    float: "right",
-    color: "#d8bfd4",
-    fontWeight: "bold",
+    float: 'right',
+    color: '#d8bfd4',
+    fontWeight: 'bold'
   };
   const text = {
-    textAlign: "left",
-    listStyleType: "circle",
+    textAlign: 'left',
+    listStyleType: 'circle'
   };
   const fujiPink = {
-    color: "#d8bfd4",
+    color: '#d8bfd4'
   };
   const blueGray = {
-    color: "#31485c",
+    color: '#31485c'
   };
   return (
     <>

@@ -1,24 +1,25 @@
+/* eslint-disable react/react-in-jsx-scope */
 // import axios from 'axios';
-import { useState, useEffect } from "react";
-import moment from "moment";
+import { useState, useEffect } from 'react';
+import moment from 'moment';
 
-export default function Blog() {
+export default function Blog () {
   const fullStack = {
-    float: "right",
-    color: "#d8bfd4",
-    fontWeight: "bold",
+    float: 'right',
+    color: '#d8bfd4',
+    fontWeight: 'bold'
   };
 
   const milk = {
-    fontFamily: "lemonmilk",
-    color: "#31485c",
+    fontFamily: 'lemonmilk',
+    color: '#31485c'
   };
   const blueGray = {
-    color: "#31485c",
+    color: '#31485c'
   };
   const button = {
-    color: "#31485c",
-    border: "none",
+    color: '#31485c',
+    border: 'none'
   };
   const [bloglist, updateBlogList] = useState([]);
   const [currentBlog, getBlogData] = useState([]);
@@ -29,7 +30,7 @@ export default function Blog() {
   }, []);
 
   const getBlogList = async () => {
-    const bloglist = await fetch("https://www.lancebailey.tech/api/blogs/")
+    const bloglist = await fetch('https://www.lancebailey.tech/api/blogs/')
       .then((response) => response.json())
       .then((responseData) => {
         return responseData;
@@ -71,7 +72,7 @@ export default function Blog() {
         </button>
         <div className="blogContent">
           <h2 style={milk}>{currentBlog.title}</h2>
-          <h3 style={milk}>{moment(currentBlog.date).format("MM-DD-YYYY")}</h3>
+          <h3 style={milk}>{moment(currentBlog.date).format('MM-DD-YYYY')}</h3>
           <div
             style={blueGray}
             dangerouslySetInnerHTML={{ __html: currentBlog.blog }}

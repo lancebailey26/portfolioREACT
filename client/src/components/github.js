@@ -1,86 +1,41 @@
-import Card from "./cards";
-import axios from "axios";
-import { useState, useEffect } from "react";
-import CardGroup from "react-bootstrap/CardGroup";
-import cert from "../assets/cert.pdf";
-import resume from "../assets/resume.pdf";
-import Tab from "react-bootstrap/Tab";
-import Tabs from "react-bootstrap/Tabs";
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/react-in-jsx-scope */
 
-export default function Github() {
+import cert from '../assets/cert.pdf';
+import resume from '../assets/resume.pdf';
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
+
+export default function Github () {
   const styles = {
-    textAlign: "center",
-    fontFamily: "josefin",
-    color: "#31485c",
+    textAlign: 'center',
+    fontFamily: 'josefin',
+    color: '#31485c'
   };
   const section = {
-    marginBottom: "50px",
-  };
-  const fullStack = {
-    float: "right",
-    color: "#31485c",
-    fontWeight: "bold",
+    marginBottom: '50px'
   };
   const tabs = {
-    backgroundColor: "#F3F1F5",
+    backgroundColor: '#F3F1F5'
   };
   const tabContent = {
-    margin: "auto",
-    width: "90%",
-    textAlign: "center",
-    color: "#31485c",
+    margin: 'auto',
+    width: '90%',
+    textAlign: 'center',
+    color: '#31485c'
   };
   const infoResume = {
-    display: "flex",
-    margin: "auto",
-    justifyContent: "space-evenly",
-    textDecoration: "none",
+    display: 'flex',
+    margin: 'auto',
+    justifyContent: 'space-evenly',
+    textDecoration: 'none'
   };
   const infoLinks = {
-    color: "#d8bfd4",
+    color: '#d8bfd4'
   };
   const fujiPink = {
-    color: "#d8bfd4",
+    color: '#d8bfd4'
   };
-  const blueGray = {
-    color: "#31485c",
-  };
-  const [first, setFirst] = useState([{}]);
-  const [second, setSecond] = useState({});
-  const [third, setThird] = useState({});
-  const [four, setFour] = useState({});
-  const [isLoading, setLoading] = useState(false);
-
-  const getData = async () => {
-    const req = await axios.get(
-      "https://gh-pinned-repos.egoist.sh/?username=lancebailey26"
-    );
-    const first = req.data[0];
-    const second = req.data[1];
-    const third = req.data[2];
-    const four = req.data[3];
-    setLoading(false);
-    setFirst(first);
-    setSecond(second);
-    setThird(third);
-    setFour(four);
-  };
-  useEffect(() => {
-    // getData();
-  }, []);
-
-  if (isLoading) {
-    return (
-      <div data-aos="fade-right" data-aos-duration="1500" className="header">
-        <h1 style={blueGray}>PORTFOLIO</h1>
-        <p style={fullStack}> what i'm working on </p>
-        <div className="github">
-          <p style={styles}>Loading...</p>
-        </div>
-        ;
-      </div>
-    );
-  }
 
   return (
     <div className="github box">
@@ -95,7 +50,7 @@ export default function Github() {
       </div>
       <div style={section}>
         <p style={styles}>
-          
+
           Here's some relevant documents that you probably came here to see
         </p>
         <div style={infoResume}>

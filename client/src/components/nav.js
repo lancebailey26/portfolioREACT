@@ -1,22 +1,19 @@
-import { useState, useEffect } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
-import axios from "axios";
-export default function Navigation() {
+/* eslint-disable react/react-in-jsx-scope */
+
+import { useEffect } from 'react';
+import { Navbar, Nav, Container } from 'react-bootstrap';
+export default function Navigation () {
   const styles = {
-    color: "#31485c",
-    fontSize: 32,
+    color: '#31485c',
+    fontSize: 32
   };
   const right = {
-    color: "#17252A",
-    float: "right",
-    fontSize: 12,
-  };
-  const rtl = {
-    color: "#17252A",
-    direction: "rtl",
+    color: '#17252A',
+    float: 'right',
+    fontSize: 12
   };
   const noPadding = {
-    padding: "0",
+    padding: '0'
   };
 
   useEffect(() => {}, []);
